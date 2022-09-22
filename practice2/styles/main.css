@@ -4,27 +4,26 @@ body {
 }
 
 .header > img {
-    height: 450px;
+    height: 320px;
     width: auto;
-    padding-left: 32px;
+    padding-left: 20px;
 }
 
 .header {
     background-color: #6B9999;
-    height: 2000px;
-    width: 520px;
+    height: 1500px;
+    width: 360px;
     display: table;
     margin-left: 85px;
-    margin-top: -22px;
-    padding-top: 220px;
+    padding-top: 160px;
     position: relative;
     top: 0;
     left: 0;
 }
 
 .header > section {
-    padding-left: 62px;
-    padding-right: 62px;
+    padding-left: 32px;
+    padding-right: 32px;
     color: aliceblue;
     padding-top: 125px;
 }
@@ -32,7 +31,6 @@ body {
 .header > section p{
     font-family: 'Lora', serif;
     letter-spacing: 2px;
-    font-size: large;
     line-height: 180%;
 }
 
@@ -48,23 +46,23 @@ body {
 }
 
 .header > section > div{
-    height: 170px;
+    height: 100px;
 }
 
 .field{
     background-color: #EBCABB;
     position: absolute;
     width: 100%;
-    height: 450px;
-    top: 110px;
-    padding-left: 650px;
-    padding-top: 185px;
+    height: 320px;
+    top: 140px;
+    padding-left: 500px;
+    padding-top: 50px;
     line-height: 180%;
 }
 
 .field > h1 {
     font-family: 'Lato', sans-serif; 
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .field > p {
