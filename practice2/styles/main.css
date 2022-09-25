@@ -55,13 +55,11 @@ body {
 
 .header > section > form > textarea {
     background-color: #fff;
-    background-clip: padding-box;
     border: 1px solid #bdbdbd;
     border-radius: 4px;
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 20px;
-    line-height: 180%;
     outline: none;
     width: 296px;
     height: 150px;
@@ -83,14 +81,12 @@ body {
     font-size: 15px;
     cursor: pointer;
 
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .header > section > button:hover {
     background-color: #6B9999;
-    border-color: #fff;
-    font-family: 'Lato', sans-serif;
     color: #fff;
 }
 
