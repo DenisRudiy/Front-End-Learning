@@ -14,10 +14,10 @@ body {
 
 .header {
     background-color: #6B9999;
-    height: 1500px;
+    height: 2100px;
     width: 360px;
     display: table;
-    margin-left: 85px;
+    margin-left: 185px;
     margin-top: 5px;
     padding-top: 160px;
     position: relative;
@@ -29,7 +29,7 @@ body {
     padding-left: 32px;
     padding-right: 32px;
     color: aliceblue;
-    padding-top: 125px;
+    padding-top: 150px;
 }
 
 .header > section p{
@@ -53,15 +53,60 @@ body {
     height: 100px;
 }
 
+.header > section > form > textarea {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 180%;
+    outline: none;
+    width: 296px;
+    height: 150px;
+    resize: none;
+}
+
+.header > section > form > textarea::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.header > section > button {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    width: 302px;
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.header > section > button:hover {
+    background-color: #6B9999;
+    border-color: #fff;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+.footer {
+    padding-top: 460px;
+}
+
 
 /* Field with name */
 .field{
     background-color: #EBCABB;
     position: absolute;
-    width: 1395px;
+    width: 1295px;
     height: 320px;
     top: 140px;
-    padding-left: 500px;
+    padding-left: 600px;
     padding-top: 50px;
     margin-left: 5px;
     line-height: 180%;
@@ -89,7 +134,7 @@ body {
     top: 140px;
     padding-left: 85px;
     padding-top: 120px;
-    margin-left: 445px;
+    margin-left: 545px;
     margin-top: 370px;
     line-height: 180%;
 }
@@ -107,6 +152,7 @@ body {
     margin-top: 0;
     font-family: 'Lato', sans-serif;
     font-size: 35px;
+    line-height: 120%;
 }
 
 .main > section > div img {
@@ -117,6 +163,7 @@ body {
 .main > section > h2 {
     font-family: 'Lora', serif;
     font-size: 30px;
+    
 }
 
 .main > section > p {
