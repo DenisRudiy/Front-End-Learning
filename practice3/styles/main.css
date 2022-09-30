@@ -4,7 +4,6 @@ body {
 
 
 
-
 /* HEADER */
 header {
     background-color: #2b2c2c;
@@ -75,7 +74,7 @@ header > a > img {
     background-color: #2d2e2e;
     color: #7d8791;
     width: 1503px;
-    height: 2000px;
+    height: 1400px;
     padding-left: 400px;
     font-family: 'Inter Tight', sans-serif;
 }
@@ -160,5 +159,83 @@ header > a > img {
 }
 .serv_box > div > p{
     padding-left: 30px;
+    padding-right: 40px;
+    line-height: 30px;
+}
+
+
+
+
+/* RESEARCH */
+.research {
+    padding-top: 100px;
+    width: 1903px;
+    height: 250px;
+    background-image: url('/practice3/images/research_photo.png'); 
+    color: #fff;
+    font-family: 'Inter Tight', sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.res_box{
+    display: grid;
+    grid-template-columns: 340px 340px 340px 340px;
+    margin-left: 330px;
+}
+.res {
+    width: 230px;
+    text-align: center;
+}
+.res > img{
+    width: 60px;
+}
+.num {
+    font-family: 'Inter Tight', sans-serif;
+    color: #e0a80d;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+
+
+
+/* PORTFOLIO */
+.portfolio { 
+    height: 1500px;
+    background-color: #2d2e2e;
+    font-family: 'Inter Tight', sans-serif;
+}
+.portfolio > h1 {
+    margin: 0;
+    padding-top: 150px;
+    color: #e0a80d;
+    text-align: center;
+    font-size: 50px;
+}
+.port_coll {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    width: 1500px;
+    padding-left: 230px;
+    padding-top: 100px;
     
+}
+.port_coll img{
+    border-radius: 30px;
+    width: 410px;
+    height: 410px;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.port_container {
+    background-color:#e0a80d;
+    border-radius: 30px;
+    width: 430px;
+    height: 430px;
+}
+.port_icons > img {
+    width: 30px;
+    height: auto;
+    border-radius: 0px;
 }

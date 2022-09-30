@@ -7,14 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/practice3/styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;500&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 <body>
 
     <header>
         <a href="#" class="logo"><img src="/practice3/images/logo.png" alt=""></a>
-
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#Home">Home</a>
             <a href="#about">About</a>
             <a href="#service">Services</a>
             <a href="#experience">Experience</a>
@@ -23,6 +23,7 @@
         </nav>
     </header>
 
+
     <div class="Home">
         <div>
             <h4>HELLO I'M</h4>
@@ -30,6 +31,7 @@
             <p>Front-end developer. Have a skills of Web-design, Python, networking systems.</p>
         </div>
     </div>
+
 
     <div class="about">
         <div class="a_head">
@@ -52,39 +54,142 @@
                 <button href="#portfolio">Portfolio</button>
             </div>
         </div>
+
+
         <div class="services">
             <h1>Services</h1>
             <div class="serv_box">
                 <div>
                     <img src="/practice3/images/serv_1.png" alt="">
                     <h3>Creative Design</h3>
-                    <p>wfhiuwefoiwoifwef</p>
+                    <p>I have the skills of creative design, selection of colors, fashion, style and modern trends</p>
                 </div>
                 <div>
                     <img src="/practice3/images/serv_2.png" alt="">
                     <h3>Clean Code</h3>
+                    <p>I have an excellent level of writing clean, readable and editable code</p>
                 </div>
                 <div>
                     <img src="/practice3/images/serv_3.png" alt="">
                     <h3>Responsive Design</h3>
+                    <p>I have development skills for PC, Smartphones, TVs, Laptops and Tablets</p>
                 </div>
             </div>
             <div class="serv_box">
                 <div>
                     <img src="/practice3/images/serv_4.png" alt="">
                     <h3>HTML\CSS</h3>
+                    <p>Behind him is a great experience in working and developing websites using modern technologies.</p>
                 </div>
                 <div>
                     <img src="/practice3/images/serv_5.png" alt="">
                     <h3>Font Icons</h3>
+                    <p>I have experience in creating icons and various logos for companies</p>
                 </div>
                 <div>
                     <img src="/practice3/images/serv_6.png" alt="">
-                    <h3>Awesome Support</h3>
+                    <h3>Sociability</h3>
+                    <p>I have excellent communication skills and can quickly adapt to a new team</p>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <div class="research">
+        <div class="res_box">
+            <div class="res">
+                <img src="/practice3/images/res_1.png" alt="">
+                <div id="res1"></div>
+                <p>HAPPY CLIENTS</p>
+            </div>
+            <div class="res">
+                <img src="/practice3/images/res_2.png" alt="">
+                <div id="res2"></div>
+                <p>PROJECTS COMPLEATED</p>
+            </div>
+            <div class="res">
+                <img src="/practice3/images/res_3.png" alt="">
+                <div id="res3"></div>
+                <p>FILES DOWNLOADED</p>
+            </div>
+            <div class="res">
+                <img src="/practice3/images/res_4.png" alt="">
+                <div id="res4"></div>
+                <p>LIENS OF CODE</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <h1>Portfolio</h1>
+        <div class="port_coll">
+            <div class="port_container">
+                <img src="/practice3/images/port_1.png" alt="">
+                <div class="port_icons">
+                    <img src="/practice3/images/reply-fill.png" alt="">
+                    <img src="/practice3/images/search.png" alt="">
+                    <img src="/practice3/images/share-fill.png" alt="">
+                </div>
+            </div>
+            
+            <div class="port_container">
+                <img src="/practice3/images/port_2.png" alt="">
+                <div class="port_icons"></div>
+            </div>
+
+            <div class="port_container">
+                <img src="/practice3/images/port_3.png" alt="">
+                <div class="port_icons"></div>
+            </div>
+        </div>
+        <div class="port_coll">
+            <div class="port_container">
+                <img src="/practice3/images/port_4.png" alt="">
+                <div class="port_icons"></div>
+            </div>
+
+            <div class="port_container">
+                <img src="/practice3/images/port_5.png" alt="">
+                <div class="port_icons"></div>
+            </div>
+
+            <div class="port_container">
+                <img src="/practice3/images/port_6.png" alt="">
+                <div class="port_icons"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        let h2_1 = document.createElement('h2_1');
+        h2_1.className = "num";
+        h2_1.innerHTML = getRandomInt(30, 40);
+
+        let h2_2 = document.createElement('h2_2');
+        h2_2.className = "num";
+        h2_2.innerHTML = getRandomInt(10, 15);
+
+        let h2_3 = document.createElement('h2_3');
+        h2_3.className = "num";
+        h2_3.innerHTML = getRandomInt(10, 30);
+
+        let h2_4 = document.createElement('h2_4');
+        h2_4.className = "num";
+        h2_4.innerHTML = getRandomInt(10, 30);
+        
+        res1.append(h2_1);
+        res2.append(h2_2);
+        res3.append(h2_3);
+        res4.append(h2_4);
+    </script>
 </body>
 </html>
