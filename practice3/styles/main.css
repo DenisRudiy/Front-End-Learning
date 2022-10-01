@@ -1,5 +1,6 @@
 body { 
     margin: 0;
+    font-family: 'Inter Tight', sans-serif;
 }
 
 
@@ -12,6 +13,7 @@ header {
     padding: 15px 0;
     position: fixed;
     width: 1980px;
+    z-index: 1500;
 }
 header > a > img {
     width: 50px;
@@ -45,8 +47,7 @@ header > a > img {
 /* HOME */
 .Home {
     padding-top: 100px;
-    margin-left: 70px;
-    width: 1760px;
+    width: 1903px;
     height: 800px;
     background-image: url('/practice3/images/home_photo.png'); 
     color: #fff;
@@ -85,6 +86,7 @@ header > a > img {
 .a_head > img {
     height: 470px;
     width: auto;
+    border-radius: 5px;
 }
 .a_head > div {
     margin-top: -30px;
@@ -171,7 +173,7 @@ header > a > img {
     padding-top: 100px;
     width: 1903px;
     height: 250px;
-    background-image: url('/practice3/images/research_photo.png'); 
+    background-image: url('/practice3/images/pexels-lukas-590016.png'); 
     color: #fff;
     font-family: 'Inter Tight', sans-serif;
     letter-spacing: 1px;
@@ -213,29 +215,158 @@ header > a > img {
     font-size: 50px;
 }
 .port_coll {
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
-    width: 1500px;
-    padding-left: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-left: 300px;
     padding-top: 100px;
-    
 }
-.port_coll img{
-    border-radius: 30px;
-    width: 410px;
-    height: 410px;
-    padding-top: 10px;
-    padding-left: 10px;
-    cursor: pointer;
+.port_container { 
+    flex: .1 .1 20rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: .7rem solid #e0a80d;
+    border-radius: 10px;
+    background-color: #e0a80d;
 }
-.port_container {
-    background-color:#e0a80d;
-    border-radius: 30px;
-    width: 430px;
-    height: 430px;
+.port_container > img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: 40px;
+
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+.port_container:hover > img {
+    height: 80%;
+    width: 80%;
+}
+.port_container > h3 {
+    text-transform: uppercase;
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+}
+.port_icons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 .port_icons > img {
-    width: 30px;
+    display: block;
+    margin-bottom: 15px;
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+
+
+
+/* CONTACTS */
+.contacts {
+    height: 600px;
+    background-color: #2d2e2e;
+}
+.contacts > h1 {
+    margin: 0;
+    color: #e0a80d;
+    text-align: center;
+    font-size: 50px;
+}
+.c_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.c_content {
+    padding-left: 400px;
+    padding-top: 50px;
+}
+.c_reg  textarea {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 30px; margin-bottom: 10px;
+    padding-top: 15px; padding-left: 25px; padding-right: 25px;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+}
+.c_topic  textarea {
+    width: 685px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 30px; margin-bottom: 10px;
+    padding-top: 15px; padding-left: 25px; padding-right: 25px;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+}
+.c_text  textarea {
+    width: 685px;
+    height: 140px;
+    border-radius: 10px;
+    margin-right: 30px; margin-bottom: 10px;
+    padding-top: 15px; padding-left: 25px; padding-right: 25px;
+    outline: none;
+    resize: none;
+    font-size: 15px;
+}
+.c_content > button {
+    background-color: #e0a80d;
+    font-family: 'Inter Tight', sans-serif;
+    width: 735px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    border: 3px solid #e0a80d;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.c_content > button:hover {
+    background-color: #2d2e2e;
+    color: #e0a80d;
+    border-color: #e0a80d;
+}
+.c_info {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.c_info > div > img {
+    width: 25px;
     height: auto;
-    border-radius: 0px;
+    cursor: pointer;
+}
+.c_info > div > p {
+    color: #fff;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*  FOOTER */
+footer {
+    background-color: #212222;
+    height: 140px;
+    padding-left: 46%;
+        
+}
+footer > img {
+    width: 30px;
+    margin-right: 10px;
+    padding-top: 40px;
+}
+
+footer > p {
+    color: #fff;
+    padding-left: 50px;
 }
