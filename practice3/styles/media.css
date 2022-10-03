@@ -13,6 +13,7 @@
 }
 @media screen and (max-width: 1500px)
 {
+    
     .c_content { padding-left: 200px; }
     .portfolio > h1 {text-align:inherit; padding-left: 600px;}
     .about {padding-left: 220px;}
@@ -36,7 +37,14 @@
 }
 @media screen and (max-width: 1300px)
 {
-    .navbar > a {display:none;}
+    .navbar {
+        display: none;
+    }
+    .h_burger {display: contents;}
+    header > a > img {padding-right: 800px;}
+    .dropdown-content {margin-left: -40px;margin-top: 25px;}
+
+
     .c_reg  textarea {width: 275px;}
     .c_topic  textarea {width: 635px;}
     .c_text  textarea {width: 635px;}
@@ -47,6 +55,8 @@
 }
 @media screen and (max-width: 1200px)
 {
+    header > a > img {padding-right: 700px;}
+
     .c_reg  textarea {width: 175px;}
     .c_topic  textarea {width: 435px;}
     .c_text  textarea {width: 435px;}
@@ -66,6 +76,8 @@
 
 @media screen and (max-width: 1100px)
 {
+    header > a > img {padding-right: 600px;}
+
     .portfolio > h1 {padding-left: 450px;}
     .port_coll { padding-left: 150px; }
     .res_box {margin-left: 50px;}
@@ -77,6 +89,8 @@
 
 @media screen and (max-width: 1000px)
 {
+    header > a > img {padding-right: 500px;}
+
     .c_info { padding-left: 36px; }
     .portfolio > h1 {padding-left: 400px;}
     .port_coll { padding-left: 300px; }
@@ -94,6 +108,8 @@
 
 @media screen and (max-width: 900px)
 {
+    header > a > img {padding-right: 400px;}
+
     .c_reg  textarea {width: 175px;}
     .c_topic  textarea {width: 435px;}
     .c_text  textarea {width: 435px;}
@@ -116,6 +132,8 @@
 }
 @media screen and (max-width: 800px)
 {
+    header > a > img {padding-right: 300px;}
+
     .c_box {padding-left: 100px;}
     .c_info { padding-left: 150px; }
     .portfolio > h1 {padding-left: 300px;}
@@ -128,6 +146,8 @@
 }
 @media screen and (max-width: 700px)
 {
+    header > a > img {padding-right: 250px;}
+
     .c_box {padding-left: 50px;}
     .c_info { padding-left: 100px; }
     .portfolio > h1 {padding-left: 250px;}
@@ -143,6 +163,8 @@
 }
 @media screen and (max-width: 600px)
 {
+    header > a > img {padding-right: 160px;}
+
     .c_reg  textarea {width: 125px;}
     .c_topic  textarea {width: 335px;}
     .c_text  textarea {width: 335px;}

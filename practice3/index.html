@@ -12,12 +12,23 @@
 </head>
 <body>
 
-    
-
     <header>
         <a href="#" class="logo"><img src="/practice3/images/logo.png" alt=""></a>
         
-        <nav class="navbar">
+        <div class="dropdown">
+            <button class="h_burger" onclick="test" id="myBtn"><img src="/practice3/images/icons8-menu-60.png" alt=""></button>
+            
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#Home">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Services</a>
+                <a href="#experience">Experience</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contacts</a>
+            </div>
+          </div>
+
+        <nav class="navbar" id="">
             <a href="#Home">Home</a>
             <a href="#about">About</a>
             <a href="#service">Services</a>
@@ -57,7 +68,7 @@
                     Developed user personas, usage scenarios, sitemap and project logic.
                     Collaborated with developers and SEO specialists.
                     Created icons, illustrations, logos, banners and other graphic elements.</p>
-                <button href="#portfolio">Portfolio</button>
+                <button><a href="#portfolio">Portfolio</a></button>
             </div>
         </div>
 
@@ -271,6 +282,14 @@
         res2.append(h2_2);
         res3.append(h2_3);
         res4.append(h2_4);
+
+
+        document.getElementById("myBtn").onclick = function() {myFunction()};
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
     </script>
 </body>
 </html>

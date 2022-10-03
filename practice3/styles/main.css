@@ -6,12 +6,11 @@ body {
 
 
 
-
 /* HEADER */
 header {
     background-color: #2b2c2c;
-    display: grid;
-    grid-template-columns: 1400px 0px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -22,6 +21,7 @@ header > a > img {
     height: auto;
     padding-left: 400px;
 }
+
 .navbar > a {
     display: initial;
     font-size: 15px;
@@ -36,12 +36,41 @@ header > a > img {
     color: #fff;
 }
 .navbar {
+    padding-left: 400px;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 50px;
 }
+
+.h_burger {
+    border: none;
+    cursor: pointer;
+    display: none;
+    background-color: rgba(28,28,28,0)
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2b2c2c;
+    min-width: 160px;
+    overflow: auto;
+}
+.dropdown-content a {
+    font-family: 'Inter Tight', sans-serif;
+    color: #7d8791;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+.dropdown-content a:hover {background-color: #2d2e2e}
+.show {display:block;}
 
 
 
@@ -107,6 +136,10 @@ header > a > img {
 .a_head > div > p {
     line-height: 23px;
 }
+.a_head > div > button > a {
+    text-decoration: none;
+    color: #fff;
+}
 .a_head > div > button {
     margin-left: -10px;
     background-color: #e0a80d;
@@ -114,7 +147,6 @@ header > a > img {
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    color: #fff;
     font-size: 18px;
     border: 3px solid #e0a80d;
     cursor: pointer;
