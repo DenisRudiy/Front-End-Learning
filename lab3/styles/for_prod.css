@@ -253,38 +253,3 @@ html {margin: 0; padding: 0;}
     background-color: #fea526;
     border:2px solid #fea526;
 }
-
-
-
-
-
-.About {
-    margin-top: 200px;
-    margin-left: 100px;
-    display: none;
-    height: 500px;
-    width: 90%;
-    position: absolute;
-    z-index: 9999;
-    background-color: #121215;
-    border: 5px solid #7d8791;
-    border-radius: 10px;
-    box-shadow: 10px 10px 40px 2px #121215;
-}
-.escape {
-    background-color: rgba(28,28,28,0);
-    border: none;
-    cursor: pointer;
-}
-.A_img {
-    height: 400px;
-    width: auto;
-}
-.A_content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-}
-.A_title {
-    color: #fff;
-}
