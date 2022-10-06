@@ -165,7 +165,7 @@ header > a > img {
 }
 .logo > h1 {
     color: #fea526;
-    padding-left: 44%;
+    padding-left: 43%;
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -204,7 +204,7 @@ header > a > img {
 }
 .main > h2 {
     margin-top: -50px;
-    margin-left: 730px;
+    margin-left: 770px;
     font-size: 50px;
     font-weight: 100;
     font-weight: 900;
@@ -376,7 +376,7 @@ header > a > img {
 }
 .f_p_content > h2 {
     color: #1d1e23;
-    padding-left: 41%;
+    padding-left: 44%;
 }
 
 .rate {
@@ -483,7 +483,7 @@ footer {
 }
 .f_logo > h1 {
     color: #fea526;
-    padding-left: 44%;
+    padding-left: 42.5%;
     margin-top: 0px;
     margin-bottom: 0;
     text-transform: uppercase;

@@ -112,10 +112,10 @@ function updateCartTotal(){
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('P_price')[0]
         var quantityElement = cartRow.getElementsByClassName('C_C_count')[0]
-        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var price = parseFloat(priceElement.innerText.replace('kg', ''))
         var quantity = parseInt(quantityElement.value)
         total = total + (price*quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('C_total_price')[0].innerText = '$' + total
+    document.getElementsByClassName('C_total_price')[0].innerText = total + 'kg'
 }
