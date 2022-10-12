@@ -1,0 +1,16 @@
+.Rev {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 1200px;
+    background-color: rgb(48, 48, 48);
+}
+
+.Rev > h1 {
+    text-align: center;
+    color: #e0a80d;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
