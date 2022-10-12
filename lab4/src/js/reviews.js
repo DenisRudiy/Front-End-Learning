@@ -27,3 +27,7 @@ async function parse(data) {
         await addCustomer(title, body, imgScr, alt)
     };
 }
+
+
+
+

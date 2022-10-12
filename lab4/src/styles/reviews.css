@@ -1,3 +1,7 @@
+input {
+    border: none;
+}
+
 .Rev {
     padding-left: 150px;
     padding-right: 100px;
@@ -48,4 +52,94 @@
     object-fit: cover;
     border-radius: 20px;
     align-self: center;
+}
+
+
+
+.Weather {
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+}
+.ajax-section {
+    margin-top: 20px;
+    border: 2px solid rgb(48, 48, 48);
+}
+.top-banner {
+    padding-left: 40%;
+}
+.heading {
+    margin: 0;
+    color: #e0a80d;
+    font-size: 50px;
+}
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.heading {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.02em;
+    padding: 0 0 30px 0;
+}
+.top-banner form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.top-banner form input {
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 5px 10px;
+    border-bottom: 2px solid #fff;
+    
+    background: none;
+    outline: none;
+    color: #fff;
+}
+.top-banner form input::placeholder {
+    color: currentColor; 
+    font-family: 'Oswald', sans-serif;
+}
+.top-banner form button {
+    margin-left: 10px; 
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    background-color: rgba(28,28,28,0);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.top-banner form button:hover {
+    background-color: #fff;
+    color: #121215;
+} 
+
+
+
+ul {
+    list-style: none;
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.city {
+    padding-left: 20px;
+    color: #121215;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 200px;
 }
