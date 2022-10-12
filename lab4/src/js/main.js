@@ -1,3 +1,5 @@
+//    npm i -g parcel-bundler
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {

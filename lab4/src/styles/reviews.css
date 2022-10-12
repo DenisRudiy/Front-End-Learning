@@ -1,8 +1,9 @@
 .Rev {
-    padding-left: 100px;
+    padding-left: 150px;
     padding-right: 100px;
     height: 1200px;
     background-color: rgb(48, 48, 48);
+    color: #fff;
 }
 
 .Rev > h1 {
@@ -13,4 +14,38 @@
     font-size: 60px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+}
+
+.Res_content {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Res_box {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 350px;
+    height: 420px;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;  
+}
+
+.Res_box:hover {
+    transform: scale(1.05);
+    background-color: #e0a80d;
+}
+
+.Res_box > img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    align-self: center;
 }
