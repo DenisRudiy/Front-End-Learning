@@ -31,7 +31,7 @@ input {
     padding-left: 10px;
     padding-right: 10px;
     border: 2px solid #fff;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 350px;
     height: 420px;
     cursor: pointer;
@@ -59,13 +59,15 @@ input {
 .Weather {
     background-color: rgb(48, 48, 48);
     color: #fff;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 .ajax-section {
     margin-top: 20px;
     border: 2px solid rgb(48, 48, 48);
 }
 .top-banner {
-    padding-left: 40%;
+    padding-left: 30%;
 }
 .heading {
     margin: 0;
@@ -137,9 +139,33 @@ ul {
     gap: 20px;
 }
 .city {
-    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
     color: #121215;
-    background-color: #fff;
+    background-color: rgb(222, 221, 221);
     border-radius: 20px;
-    width: 200px;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.city-name {
+    padding-top: 15px;
+    font-size: 40px;
+    cursor: pointer;
+
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.city-name:hover {
+    letter-spacing: 1px;
+    color: #e0a80d;
+}
+.city-temp {
+    padding-left: 60px;
+    padding-top: 20px;
+    font-size: 70px;
+}
+.city figure {
+    padding-left: 20px;
 }

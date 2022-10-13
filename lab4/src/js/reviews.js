@@ -1,8 +1,8 @@
-async function addCustomer(title, body, imgScr, alt) {
-    let customer = document.createElement('div')
-    let CustomersContainer = document.querySelector('.Res_content')
+async function addViewer(title, body, imgScr, alt) {
+    let viewer = document.createElement('div')
+    let ViewerContainer = document.querySelector('.Res_content')
 
-    let CustomersContent = `
+    let ViewerContent = `
     <div class="Res_box">
         <img src="${imgScr}" alt="${alt}">
         <p>
@@ -11,8 +11,8 @@ async function addCustomer(title, body, imgScr, alt) {
         <h3> ${title} </h3>
         
     </div>`
-    customer.innerHTML = CustomersContent;
-    CustomersContainer.append(customer);
+    viewer.innerHTML = ViewerContent;
+    ViewerContainer.append(viewer);
 }
 
 let response = fetch('https://dummyjson.com/posts?skip=22&limit=8').then(res => res.json()).then(json => parse(json.posts))
@@ -24,7 +24,7 @@ async function parse(data) {
         console.log(body)
         let imgScr = `./img/rec${element}.jpg`
         let alt = `volunteer${element}`
-        await addCustomer(title, body, imgScr, alt)
+        await addViewer(title, body, imgScr, alt)
     };
 }
 

@@ -72,9 +72,6 @@ form.addEventListener("submit", e => {
       li.innerHTML = markup;
       list.appendChild(li);
     })
-    
-
-  
   form.reset();
   input.focus();
 });
