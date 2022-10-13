@@ -15,19 +15,16 @@ async function addViewer(title, body, imgScr, alt) {
     ViewerContainer.append(viewer);
 }
 
-let response = fetch('https://dummyjson.com/posts?skip=22&limit=8').then(res => res.json()).then(json => parse(json.posts))
-console.log(response);
-async function parse(data) {
-    for(let element = 0; element < data.length; element++){
-        let title = await data[element].title
-        let body = await data[element].body
-        console.log(body)
-        let imgScr = `./img/rec${element}.jpg`
-        let alt = `volunteer${element}`
+async function Get_Posts_Users() {
+    let response_posts = await fetch(`https://dummyjson.com/posts?skip=22&limit=8`).then(resp => resp.json()).then(jsonp => jsonp.posts);
+    let response_users = await fetch(`https://dummyjson.com/users?skip=22&limit=8`).then(resu => resu.json()).then(jsonu => jsonu.users);
+
+    for (let i = 0; i < response_posts.length; i++) {
+        let title = await response_posts[i].title;
+        let body = await response_posts[i].body;
+        let imgScr = `${response_users[i].image}`
+        let alt = `viewer${i}`;
         await addViewer(title, body, imgScr, alt)
     };
 }
-
-
-
-
+Get_Posts_Users();
