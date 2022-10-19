@@ -9,14 +9,38 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+    <!--  
+        docker build -t lab5 .
+        docker run -d -p 3000:80 -v D:\!WEB\!JS_KNU\lab5\about.json:/data/db.json clue/json-server 
+     -->
     <div class="Head">
         <img src="./img/coffee-shop-logo.png" alt="">
+        <h2>The original coffee shop</h2>
     </div>
-    <div class="About" id="About">
 
-    </div>
     <div class="Cont">        <!--Data came from about.json-->    </div>
-    <div class="footer"></div>
+
+    <div class="footer">
+        <h1>Wite to Us</h1>
+        <div class="c_box">
+            <div class="c_content">
+                <div class="c_reg">
+                    <textarea placeholder="Name"></textarea>
+                    <textarea placeholder="Email"></textarea>
+                </div>  
+
+                <div class="c_text">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+
+                <button>Send Now!</button>
+            </div>
+
+            <div class="c_info">
+                <img src="./img/photo_2022-09-29_19-20-24.png" alt="">
+                <h3>Denis Rudiy</h3>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
