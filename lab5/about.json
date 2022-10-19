@@ -1,0 +1,40 @@
+{
+  "about": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "intensity": "very strong",
+      "img": "./img/cof_1.png"
+    },
+    {
+      "id": 2,
+      "name": "Americano",
+      "intensity": "strong",
+      "img": "./img/cof_2.png"
+    },
+    {
+      "id": 3,
+      "name": "Turkish Coffee",
+      "intensity": "strong",
+      "img": "./img/cof_3.png"
+    },
+    {
+      "id": 4,
+      "name": "Cappuccino",
+      "intensity": "medium strength",
+      "img": "./img/cof_4.png"
+    },
+    {
+      "id": 5,
+      "name": "Latte",
+      "intensity": "light",
+      "img": "./img/cof_5.png"
+    },
+    {
+      "id": 6,
+      "name": "Irish Coffee",
+      "intensity": "light",
+      "img": "./img/cof_6.png"
+    }
+  ]
+}
