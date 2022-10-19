@@ -15,34 +15,55 @@ body {
   gap: 60px;
   padding-left: 350px;
   padding-right: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #241741;
 }
 
 .Head {
-  height: 300px;
+  height: 200px;
+  background-color: #2b1854;
+  text-align: center;
 }
 .Head img {
   width: 200px;
   height: auto;
 }
 
+.About {
+  height: 400px;
+}
+
 .Cont__container {
-  background-color: #361f0d;
+  background-color: #2b1854;
   width: 350px;
-  height: 300px;
-  padding-top: 40px;
+  height: 350px;
   border-radius: 20px;
   border: 5px solid rgb(208, 164, 55);
 }
 .Cont__container img {
-  padding-left: 100px;
   width: 100px;
+  padding-left: 35%;
   height: auto;
+}
+.Cont__container h2 {
+  color: #fff;
+  font-size: 30px;
+  margin: 0;
+  padding-left: 20px;
 }
 .Cont__container h3 {
   color: #fff;
   font-size: 30px;
+  text-align: center;
 }
 .Cont__container p {
   color: #fff;
   font-size: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2b1854;
+  height: 400px;
 }/*# sourceMappingURL=main.css.map */

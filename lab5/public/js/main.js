@@ -4,10 +4,10 @@ async function addCoffee(id, name, int, img) {
 
     let ViewerContent = `
     <div class="Cont__container">
+        <h2>${id}</h2>
         <img src="${img}">
         <h3> ${name} </h3>
         <p>
-            ${id}
             ${int}
         </p>
     </div>`
