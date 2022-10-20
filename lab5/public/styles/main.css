@@ -22,30 +22,39 @@ body {
 
 .Head {
   height: 200px;
+  width: 100%;
   background-color: #2b1854;
   padding-left: 450px;
   display: flex;
   flex-wrap: wrap;
+  position: fixed;
+  z-index: 1500;
 }
 .Head img {
   width: 200px;
   height: auto;
 }
-.Head h2 {
+.Head div h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 90px;
   color: rgb(208, 164, 55);
   font-size: 30px;
 }
-
-.About {
-  height: 400px;
+.Head div a {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 50px;
+  text-decoration: none;
+  transition-duration: 0.5s;
 }
-.About div {
-  height: 400px;
-  width: 1000px;
-  background-color: #241741;
+.Head div a:hover {
+  color: rgb(208, 164, 55);
+  letter-spacing: 1px;
+}
+
+.fil {
+  height: 200px;
 }
 
 .Cont__container {

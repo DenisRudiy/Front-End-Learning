@@ -13,13 +13,25 @@
         docker build -t lab5 .
         docker run -d -p 3000:80 -v D:\!WEB\!JS_KNU\lab5\about.json:/data/db.json clue/json-server 
      -->
+     <a name="Home"></a>
     <div class="Head">
         <img src="./img/coffee-shop-logo.png" alt="">
-        <h2>The original coffee shop</h2>
+        <div>
+            <h2>The original coffee shop</h2>
+            <nav class="navbar">
+                <a href="#Home">Home</a>
+                <a href="">Reviews</a>
+                <a href="#Products">Products</a>
+                <a href="#Contacts">Write to Us</a>
+            </nav>
+        </div>
     </div>
 
-    <div class="Cont">        <!--Data came from about.json-->    </div>
+    <div class="fil"></div>
 
+    <a name="Products"></a>
+    <div class="Cont">        <!--Data came from about.json-->    </div>
+    <a name="Contacts"></a>
     <div class="footer">
         <h1>Wite to Us</h1>
         <div class="c_box">

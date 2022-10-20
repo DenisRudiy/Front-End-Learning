@@ -23,34 +23,46 @@ $var_color: rgb(208, 164, 55);
 
 .Head {
     height: 200px;
+    width: 100%;
     background-color: $bg_color;
     padding-left: 450px;
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 1500;
     img {
         width: 200px;
         height: auto;
     }
-    h2 {
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-top: 90px;
-        color: $var_color;
-        font-size: 30px;
+    div{
+        h2 {
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 90px;
+            color: $var_color;
+            font-size: 30px;
+        }
+        a {
+            color: $txt_color;
+            font-size: 20px;
+            padding-right: 50px;
+            text-decoration: none;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        a:hover {
+            color: $var_color;
+            letter-spacing: 1px;
+        }
     }
     
 }
 
-.About{
-    height: 400px;
-    div {
-        height: 400px;
-        width: 1000px;
-        background-color: $bg_color_2;
-    }
+.fil {
+    height: 200px;
 }
 
-.Cont__container {
+.Cont__container {  
     background-color: $bg_color ;
     width: 350px;
     height: 350px;
