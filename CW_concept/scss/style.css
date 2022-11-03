@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #363636;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 200px;
+  padding-right: 200px;
+  position: fixed;
+  width: 100%;
+  z-index: 1500;
+}
+header .logo {
+  padding-top: 31px;
+  color: #fff;
+  font-size: 38px;
+}
+header .navbar {
+  padding-left: 500px;
+  padding-top: 40px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 40px;
+  font-size: 20px;
+}
+header .icon_btns {
+  padding-left: 350px;
+  padding-top: 35px;
+}
+header .icon_btns button {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(28, 28, 28, 0);
+  border: none;
+  background-size: cover;
+  margin-right: 16px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
