@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
+import { HeaderModule } from '../header/header.module';
 
 
 
@@ -8,8 +9,12 @@ import { LayoutComponent } from './layout.component';
   declarations: [
     LayoutComponent
   ],
+  exports: [
+    LayoutComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    HeaderModule
   ]
 })
 export class LayoutModule { }

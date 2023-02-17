@@ -1,1 +1,9 @@
-<p>header works!</p>
+<nav class="nav">
+  <ul>
+    <li *ngFor="let item of menuItems">
+      <a [routerLink]="item.path" routerLinkActive="active">
+        <mat-icon class="icon">{{ item.icon }}</mat-icon>
+      </a>
+    </li>
+  </ul>
+</nav>
