@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SaleComponent } from './components/sale/sale.component';
 import { LayoutModule } from './components/layout/layout.module';
 import { HeaderModule } from './components/header/header.module';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaleComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
