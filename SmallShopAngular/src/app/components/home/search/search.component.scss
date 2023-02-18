@@ -1,0 +1,7 @@
+.search {
+  @apply mb-2 pt-6 px-6;
+
+  > input {
+    @apply p-4 rounded bg-white placeholder-neutral-400 w-full block outline-none;
+  }
+}

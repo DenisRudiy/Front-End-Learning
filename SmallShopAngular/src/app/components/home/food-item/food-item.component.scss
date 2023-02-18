@@ -4,6 +4,12 @@
   > img {
     @apply mb-2 mx-auto;
     height: 160px;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  > img:hover {
+    transform: scale(1.05);
   }
   .heading {
     @apply font-medium mb-2 block text-lg;
