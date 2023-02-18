@@ -1,0 +1,74 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "title": "Beef Burger",
+      "price": 125,
+      "type": "burger",
+      "image": "https://www.pngall.com/wp-content/uploads/2016/05/Burger-Free-Download-PNG.png"
+    },
+    {
+      "id": 2,
+      "title": "Chicken Burger",
+      "price": 105,
+      "type": "burger",
+      "image": "https://www.citypng.com/public/uploads/small/11653270695eambebc2ohxjpkpa7svgsikbhb3gu3ki3sgiw8zwlxhs7hohojhatsosuhthfgzr09x8yd7iyeyronhf4iwaz2uobpneywouxm8e.png"
+    },
+    {
+      "id": 3,
+      "title": "Cheese Burger",
+      "price": 85,
+      "type": "burger",
+      "image": "https://www.pngmart.com/files/16/Double-Cheese-Burger-PNG-Transparent-Image.png"
+    },
+    {
+      "id": 4,
+      "title": "Double Burger",
+      "price": 155,
+      "type": "burger",
+      "image": "https://freepngimg.com/thumb/burger/145511-king-big-photos-burger-hq-image-free.png"
+    },
+    {
+      "id": 5,
+      "title": "Mexican Taco",
+      "price": 95,
+      "type": "taco",
+      "image": "https://www.pngall.com/wp-content/uploads/4/Taco-PNG-Image.png"
+    },
+    {
+      "id": 6,
+      "title": "Chicken-Wings",
+      "price": 135,
+      "type": "chicken",
+      "image": "https://i.pinimg.com/originals/93/0c/b3/930cb346ec8724e5672600ae8387f91b.png"
+    },
+    {
+      "id": 7,
+      "title": "Coca Cola",
+      "price": 25,
+      "type": "drink",
+      "image": "https://www.pngall.com/wp-content/uploads/2016/04/Coca-Cola-PNG-Picture.png"
+    },
+    {
+      "id": 8,
+      "title": "Pepsi",
+      "price": 25,
+      "type": "drink",
+      "image": "https://www.pngplay.com/wp-content/uploads/1/Pepsi-PNG-Photo-Image.png"
+    },
+    {
+      "id": 9,
+      "title": "Red Bull",
+      "price": 55,
+      "type": "drink",
+      "image": "https://www.pngmart.com/files/5/Red-Bull-PNG-File.png"
+    },
+    {
+      "id": 10,
+      "title": "Monster",
+      "price": 45,
+      "type": "drink",
+      "image": "https://www.pngmart.com/files/22/Monster-Energy-PNG-Photos.png"
+    }
+  ]
+}

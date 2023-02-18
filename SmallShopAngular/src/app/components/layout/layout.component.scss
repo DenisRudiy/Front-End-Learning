@@ -1,4 +1,4 @@
 .layout {
-  @apply mx-auto rounded-lg overflow-hidden shadow-lg;
+  @apply mx-auto rounded-lg overflow-hidden shadow-lg relative my-4;
   max-width: 550px;
 }
