@@ -1,0 +1,42 @@
+@import '../../../../mixin.scss';
+
+.header {
+  @apply pl-10 pr-10  fixed z-10;
+  background-image: url('https://poetic-pothos-84995b.netlify.app/assets/img/banner/bg.png');
+  width: 100%;
+  .logo_part {
+    @apply flex justify-between;
+    width: 210px;
+    .photo {
+      width: 65px;
+    }
+    .title {
+      @apply pt-5 text-2xl uppercase font-bold;
+    }
+  }
+  .navbar {
+    @apply flex justify-end;
+    .nav_content {
+      padding: 1rem;
+      @include for-size(mobile) {
+        padding: 0.4rem;
+      }
+      @include for-size(Windows) {
+        padding: 1rem;
+      }
+
+      button:hover {
+        transform: scale(1.2);
+      }
+    }
+    .nav_arrow {
+      padding: 1rem 0rem 0rem 0rem;
+      @include for-size(mobile) {
+        padding: 0.4rem;
+      }
+      @include for-size(Windows) {
+        padding: 1rem;
+      }
+    }
+  }
+}

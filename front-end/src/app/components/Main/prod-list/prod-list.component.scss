@@ -1,0 +1,74 @@
+@import '../../../../mixin.scss';
+
+.prod_list {
+  height: 250px;
+  .order {
+    @apply uppercase text-white text-xl;
+    width: 200px;
+    height: 60px;
+    background-color: #bf2222;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .order:hover {
+    background-color: #8a2222;
+    transform: scale(1.05);
+  }
+  .head_block {
+    width: 265px;
+    height: 50px;
+    background-color: #ffc045;
+    box-shadow: #a98c76 3px 3px;
+    padding: 7px 7px 7px 7px;
+    margin-top: 50px;
+    h2 {
+      @apply uppercase;
+      font-size: 25px;
+    }
+  }
+  h1 {
+    @apply uppercase;
+    font-size: 5vw;
+    text-shadow: #a98c76 3px 3px;
+  }
+  h5 {
+    @include for-size(watches) {
+      font-size: 3vw;
+    }
+    @include for-size(for-main) {
+      font-size: 3vw;
+    }
+    @include for-size(before-main) {
+      font-size: 20px;
+    }
+    @include for-size(Windows) {
+      font-size: 20px;
+    }
+  }
+}
+
+.wrapper-body {
+  padding: 10vw 2.5vw 5vw 2.5vw;
+  align-items: center;
+
+  .wrapper {
+    position: relative;
+    .carousel {
+      display: flex;
+      white-space: nowrap;
+      font-size: 0px;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 30vw;
+        height: auto;
+        object-fit: cover;
+        margin-left: 14px;
+        border-radius: 10px;
+      }
+      img:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

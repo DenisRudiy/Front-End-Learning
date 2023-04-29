@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'primeng/resources/themes/saga-orange/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeicons/primeicons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  color: #3d2514;
+}
+body::-webkit-scrollbar {
+  display: none;
+}

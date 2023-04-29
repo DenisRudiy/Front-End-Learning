@@ -1,0 +1,49 @@
+.footer {
+  margin-top: 10px;
+  background: url('https://poetic-pothos-84995b.netlify.app/assets/img/footer-bg.jpg')
+    no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 25vw;
+  margin-top: 50px;
+  .foot_text {
+    position: relative;
+    padding: 5vw;
+    z-index: 1;
+    .logo_part {
+      @apply flex;
+      width: 100%;
+      color: white;
+      .photo {
+        width: 5vw;
+        height: 100%;
+        z-index: 1;
+      }
+      .title {
+        @apply pt-1 uppercase font-bold z-10;
+        font-size: 3vw;
+      }
+    }
+    .footer_info {
+      color: #fff;
+      font-size: 1.25vw;
+      max-width: 50%;
+      margin-bottom: 0;
+      padding-top: 2vw;
+      height: 10vw;
+      p {
+        @apply font-thin;
+      }
+    }
+  }
+}
+.footer::after {
+  content: '';
+  background-color: rgba(27, 26, 26, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

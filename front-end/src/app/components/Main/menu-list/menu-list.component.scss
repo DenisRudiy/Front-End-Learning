@@ -1,0 +1,50 @@
+@import '../../../../mixin.scss';
+
+.menu_box {
+  color: white;
+  padding-top: 50px;
+  .photo {
+    cursor: pointer;
+    width: 41vw;
+    height: auto;
+  }
+  .big_photo {
+    transition: transform 0.5s;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    h1 {
+      @apply absolute top-0 uppercase cursor-pointer;
+      padding: 10px 20px 20px 20px;
+      font-size: 2vw;
+    }
+    h2 {
+      @apply absolute top-0 uppercase cursor-pointer;
+      padding: 5vw 20px 20px 20px;
+      font-size: 5vw;
+    }
+  }
+  .couple {
+    .small_photo {
+      transition: transform 0.5s;
+      position: relative;
+      margin: 30px 30px 30px 30px;
+      h1 {
+        @apply absolute top-0 uppercase cursor-pointer;
+        padding: 10px 20px 20px 20px;
+        font-size: 2vw;
+      }
+      h2 {
+        @apply absolute top-0 uppercase cursor-pointer;
+        padding: 5vw 20px 20px 20px;
+        font-size: 5vw;
+      }
+    }
+  }
+
+  .big_photo:hover {
+    transform: scale(1.015);
+  }
+  .small_photo:hover {
+    transform: scale(1.015);
+  }
+}

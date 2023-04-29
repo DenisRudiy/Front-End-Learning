@@ -1,0 +1,27 @@
+@import 'primeng/resources/themes/saga-orange/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeicons/primeicons.css';
+
+@mixin for-size($size) {
+  @if $size == watches {
+    @media (max-width: 300px) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media (max-width: 550px) {
+      @content;
+    }
+  } @else if $size == for-main {
+    @media (min-width: 1150px) {
+      @content;
+    }
+  } @else if $size == before-main {
+    @media (min-width: 1151px) {
+      @content;
+    }
+  } @else if $size == Windows {
+    @media (min-width: 2560px) {
+      @content;
+    }
+  }
+}

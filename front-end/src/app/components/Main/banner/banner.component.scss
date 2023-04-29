@@ -1,0 +1,46 @@
+.bun_body {
+  .bun_slide {
+    width: 75%;
+    margin-left: 12.5%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    @apply flex;
+    padding: 20px;
+    border-radius: 10px;
+    .bun_text {
+      margin-left: 3vw;
+      width: 35%;
+      padding: 1vw;
+      h1 {
+        font-size: 3.5vw;
+      }
+      h3 {
+        font-size: 2vw;
+      }
+      p {
+        font-size: 1.25vw;
+      }
+      .order {
+        @apply mt-5 uppercase text-white text-xl;
+        width: 200px;
+        height: 60px;
+        background-color: #bf2222;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+      .order:hover {
+        background-color: #8a2222;
+        transform: scale(1.05);
+      }
+    }
+    .bun_image {
+      @apply flex justify-start;
+      img {
+        margin-left: 5vw;
+        width: 35vw;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+  }
+}

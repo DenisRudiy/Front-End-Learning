@@ -1,0 +1,29 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Cheeseburger",
+      "img": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off"
+    },
+    {
+      "id": 2,
+      "name": "Beef Burger",
+      "img": "https://s7d1.scene7.com/is/image/mcdonalds/Public_ROYAL_ch-2:product-header-desktop?wid=1170&hei=643&dpr=off"
+    },
+    {
+      "id": 3,
+      "name": "Double Cheeseburger",
+      "img": "https://s7d1.scene7.com/is/image/mcdonalds/SdwchDoubleCheeseburger:product-header-desktop?wid=830&hei=458&dpr=off"
+    },
+    {
+      "id": 5,
+      "name": "Chicken Burger",
+      "img": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_McChicken:product-header-desktop?wid=830&hei=458&dpr=off"
+    },
+    {
+      "id": 6,
+      "name": "Big Burger",
+      "img": "https://s7d1.scene7.com/is/image/mcdonalds/BIG_MAC:product-header-desktop?wid=829&hei=455&dpr=off"
+    }
+  ]
+}
