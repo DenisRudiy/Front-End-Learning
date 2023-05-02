@@ -1,4 +1,4 @@
-@import '../../../../mixin.scss';
+@import '../../../../../mixin.scss';
 
 .menu_box {
   color: white;
@@ -12,6 +12,9 @@
     transition: transform 0.5s;
     position: relative;
     margin: 10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
     h1 {
       @apply absolute top-0 uppercase cursor-pointer;
       padding: 10px 20px 20px 20px;
@@ -28,6 +31,9 @@
       transition: transform 0.5s;
       position: relative;
       margin: 30px 30px 30px 30px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      border-radius: 10px;
       h1 {
         @apply absolute top-0 uppercase cursor-pointer;
         padding: 10px 20px 20px 20px;

@@ -8,15 +8,16 @@
   </div>
   <div class="navbar">
     <div class="nav_content">
-      <button class="pi pi-home ease-out duration-300"></button>
+      <button
+        class="pi pi-home ease-out duration-300"
+        routerLink="home"
+      ></button>
     </div>
     <div class="nav_arrow"><span class="pi pi-angle-right"></span></div>
     <div class="nav_content">
-      <button class="ease-out duration-300">Menu</button>
-    </div>
-    <div class="nav_arrow"><span class="pi pi-angle-right"></span></div>
-    <div class="nav_content">
-      <button class="ease-out duration-300">Reservation</button>
+      <button class="ease-out duration-300">
+        <a routerLink="menu">Menu</a>
+      </button>
     </div>
     <div class="nav_arrow"><span class="pi pi-angle-right"></span></div>
     <div class="nav_content">
@@ -24,7 +25,9 @@
     </div>
     <div class="nav_arrow"><span class="pi pi-angle-right"></span></div>
     <div class="nav_content">
-      <button class="ease-out duration-300">Contact Us</button>
+      <button class="ease-out duration-300">
+        <a routerLink="contact">Contact Us</a>
+      </button>
     </div>
   </div>
 </div>
