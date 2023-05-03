@@ -18,25 +18,16 @@
     @apply flex justify-end;
     .nav_content {
       padding: 1rem;
-      @include for-size(mobile) {
-        padding: 0.4rem;
+      button {
+        width: 30px;
+        height: auto;
       }
-      @include for-size(Windows) {
-        padding: 1rem;
-      }
-
       button:hover {
         transform: scale(1.2);
       }
     }
     .nav_arrow {
       padding: 1rem 0rem 0rem 0rem;
-      @include for-size(mobile) {
-        padding: 0.4rem;
-      }
-      @include for-size(Windows) {
-        padding: 1rem;
-      }
     }
   }
 }

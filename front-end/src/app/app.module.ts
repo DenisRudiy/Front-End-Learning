@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router'
 import { AppRoutingModule } from './app-routing.module'
+import { NgxPaginationModule } from 'ngx-pagination'
 
 //  Apps Imports
 import { AppComponent } from './app.component'
@@ -11,17 +12,17 @@ import { FooterComponent } from './components/Main/footer/footer.component'
 import { HeaderComponent } from './components/Main/header/header.component'
 import { RegistrationComponent } from './components/Additional/registration/registration.component'
 import { LoginComponent } from './components/Additional/login/login.component'
-
-//  PrimeNG Imports
-import { AvatarModule } from 'primeng/avatar'
-import { MainComponent } from './components/Main/main/main.component'
-import { ProdListComponent } from './components/Main/home-page/prod-list/prod-list.component'
-import { MenuListComponent } from './components/Main/home-page/menu-list/menu-list.component'
-import { ButtonModule } from 'primeng/button'
 import { BannerComponent } from './components/Main/home-page/banner/banner.component'
 import { HomePageComponent } from './components/Main/home-page/home-page.component'
 import { MenuPageComponent } from './components/Main/menu-page/menu-page.component'
-import { ContactPageComponent } from './components/Main/contact-page/contact-page.component'
+import { ShopComponent } from './components/Main/menu-page/shop/shop.component'
+import { MainComponent } from './components/Main/main/main.component'
+import { ProdListComponent } from './components/Main/home-page/prod-list/prod-list.component'
+import { MenuListComponent } from './components/Main/home-page/menu-list/menu-list.component'
+
+//  PrimeNG Imports
+import { AvatarModule } from 'primeng/avatar'
+import { ButtonModule } from 'primeng/button'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ContactPageComponent } from './components/Main/contact-page/contact-pag
     BannerComponent,
     HomePageComponent,
     MenuPageComponent,
-    ContactPageComponent
+    ShopComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,8 @@ import { ContactPageComponent } from './components/Main/contact-page/contact-pag
     AvatarModule,
     ButtonModule,
     RouterModule.forRoot([]),
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

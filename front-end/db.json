@@ -3,27 +3,192 @@
     {
       "id": 1,
       "name": "Cheeseburger",
-      "img": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off"
+      "img": "https://media.istockphoto.com/id/520410807/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%87%D0%B8%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80.jpg?s=612x612&w=0&k=20&c=-Ms_C5CUkhiKj_PTBHVIgojZCEGqjlQRMPUV9V5zibA=",
+      "type": "burger",
+      "calories": "642.5",
+      "price": "20",
+      "composition": "Bun, cheese, cutlet, onions, pickles, ketchup, mustard, salad, tomato"
     },
     {
       "id": 2,
-      "name": "Beef Burger",
-      "img": "https://s7d1.scene7.com/is/image/mcdonalds/Public_ROYAL_ch-2:product-header-desktop?wid=1170&hei=643&dpr=off"
+      "name": "Double Cheese",
+      "img": "https://media.istockphoto.com/id/945057664/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D0%B4%D0%B2%D1%96%D0%B9%D0%BD%D0%B8%D0%B9-%D1%81%D0%B8%D1%80%D0%BD%D0%B8%D0%B9-%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80.jpg?s=612x612&w=0&k=20&c=G26J_RKIRwZy3Ct9MgQjw7ul_zWwwCkyVKYF8xdVwvk=",
+      "type": "burger",
+      "calories": "885.8",
+      "price": "30",
+      "composition": "Bun, cheese, two cutlets, onions, pickles, ketchup, mustard, salad, tomato"
     },
     {
       "id": 3,
-      "name": "Double Cheeseburger",
-      "img": "https://s7d1.scene7.com/is/image/mcdonalds/SdwchDoubleCheeseburger:product-header-desktop?wid=830&hei=458&dpr=off"
+      "name": "Royal Burger",
+      "img": "https://media.istockphoto.com/id/182744943/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80.jpg?s=612x612&w=0&k=20&c=tmhNb056BcFgO8F5lhkCv4F9SlfthTBwA5KevD20Saw=",
+      "type": "burger",
+      "calories": "939.9",
+      "price": "45",
+      "composition": "Bun, cheese, beef cutlet, beacon, onions, pickles, ketchup, mustard, salad, tomato"
+    },
+    {
+      "id": 4,
+      "name": "Fresh Burger",
+      "img": "https://media.istockphoto.com/id/1206323282/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%BA%D0%BE%D0%B2%D0%B8%D1%82%D0%B8%D0%B9-%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80-%D0%BD%D0%B0-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=p9gct-6BL2i22nbejawEcEJR3bBKCi1wkH0ewzx1v3Q=",
+      "type": "burger",
+      "calories": "539.7",
+      "price": "35",
+      "composition": "Bun, cheese, chicken cutlet, onions, pickles, ketchup, mustard, salad, tomato"
     },
     {
       "id": 5,
-      "name": "Chicken Burger",
-      "img": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_McChicken:product-header-desktop?wid=830&hei=458&dpr=off"
+      "name": "Mega Cheese",
+      "img": "https://media.istockphoto.com/id/511484502/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D0%B4%D0%B2%D1%96%D0%B9%D0%BD%D0%B8%D0%B9-%D1%81%D0%B8%D1%80-%D1%96-%D0%B1%D0%B5%D0%BA%D0%BE%D0%BD-%D1%87%D1%96%D0%B7%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80.jpg?s=612x612&w=0&k=20&c=Rz-j15s3AeSFxqBKqSj_CwPnJbulHYaHeEcoKM6chPo=",
+      "type": "burger",
+
+      "calories": "729.5",
+      "price": "45",
+      "composition": "Bun, double cheese, cutlet, beacon, onions, pickles, ketchup, mustard, salad, tomato"
     },
     {
       "id": 6,
-      "name": "Big Burger",
-      "img": "https://s7d1.scene7.com/is/image/mcdonalds/BIG_MAC:product-header-desktop?wid=829&hei=455&dpr=off"
+      "name": "Baby John",
+      "img": "https://media.istockphoto.com/id/1125149183/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%B2%D1%96%D0%B6%D0%B8%D0%B9-%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9.jpg?s=612x612&w=0&k=20&c=qqqRnU9Nkh8uQv6L8txAo4-FV_878Rsc_GLhKDjKnUQ=",
+      "type": "burger",
+      "calories": "899.2",
+      "price": "50",
+      "composition": "Bun, cheese, big beef cutlet, double beacon, onions, pickles, ketchup, mustard, salad, tomato"
+    },
+    {
+      "id": 7,
+      "name": "King",
+      "img": "https://media.istockphoto.com/id/1329622513/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D0%B8%D0%B9-%D0%B3%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80-%D0%B7-%D1%8F%D0%BB%D0%BE%D0%B2%D0%B8%D1%87%D0%BE%D1%8E-%D0%BA%D0%BE%D1%82%D0%BB%D0%B5%D1%82%D0%BE%D1%8E-%D0%BE%D0%B2%D0%BE%D1%87%D0%B0%D0%BC%D0%B8-%D1%96-%D1%86%D0%B8%D0%B1%D1%83%D0%BB%D0%B5%D1%8E-%D0%B2%D0%B8%D0%B4%D1%96%D0%BB%D0%B5%D0%BD%D0%B8%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D1%96%D1%8F.jpg?s=612x612&w=0&k=20&c=UHADVWlaNaS386QyHvpdz_oIQGlrX8JYn1fbXfxizOU=",
+      "type": "burger",
+      "calories": "1029.2",
+      "price": "65",
+      "composition": "Bun, double cheese, double big beef cutlet, onions, pickles, ketchup, mustard, salad, tomato"
+    },
+    {
+      "id": 8,
+      "name": "Fish Burger",
+      "img": "https://media.istockphoto.com/id/585602032/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%83%D1%80%D1%8F%D1%87%D0%B8%D0%B9-%D0%B1%D0%B5%D0%BA%D0%BE%D0%BD-%D0%BA%D0%BB%D1%83%D0%B1-%D1%81%D0%B5%D0%BD%D0%B4%D0%B2%D1%96%D1%87.jpg?s=612x612&w=0&k=20&c=h0ClQmiZ8HrXy1gR5vcJq-rBsMZQS1-amSOzyct5GYc=",
+      "type": "burger",
+      "calories": "529.2",
+      "price": "30",
+      "composition": "Bun, fish cutlet, ketchup, mayonnaise, salad, tomato"
+    },
+    {
+      "id": 9,
+      "name": "Small Fries",
+      "img": "https://media.istockphoto.com/id/1209519161/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%BF%D0%BB%D1%8F-%D1%84%D1%80%D1%96-%D0%B2-%D0%BA%D0%BE%D1%80%D0%B8%D1%87%D0%BD%D0%B5%D0%B2%D0%BE%D0%BC%D1%83-%D0%BA%D1%80%D0%B0%D1%84%D1%82-%D0%BF%D0%B0%D0%BF%D0%B5%D1%80%D0%BE%D0%B2%D0%BE%D0%BC%D1%83-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D1%96-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE%D0%BC%D1%83-%D0%BD%D0%B0-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=XF4DDkbiTfp4U5Ngwd7UMKGKdcOapDF6GeroPuckQ10=",
+      "type": "snacks",
+      "calories": "335.7",
+      "price": "10",
+      "composition": "well-fried fries dipped in salt and spices"
+    },
+    {
+      "id": 10,
+      "name": "Big Fries",
+      "img": "https://media.istockphoto.com/id/623524458/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D0%BE%D1%88%D0%B8%D0%BA-%D0%B2%D1%96%D0%B4%D0%BE%D0%BC%D0%BE%D0%B3%D0%BE-%D1%84%D0%B0%D1%81%D1%82%D1%84%D1%83%D0%B4%D1%83-%D1%84%D1%80%D0%B0%D0%BD%D1%86%D1%83%D0%B7%D1%8C%D0%BA%D0%BE%D1%97-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%BF%D0%BB%D1%96-%D1%84%D1%80%D1%96.jpg?s=612x612&w=0&k=20&c=ZWT9zf7zxaFR8VqlrNl8FhV531fapui_lJFJRmO-fRw=",
+      "type": "snacks",
+      "calories": "585.7",
+      "price": "20",
+      "composition": "well-fried fries dipped in salt and spices"
+    },
+    {
+      "id": 11,
+      "name": "Nuggets",
+      "img": "https://media.istockphoto.com/id/520915723/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D1%83%D1%80%D1%8F%D1%87%D1%96-%D1%81%D0%B0%D0%BC%D0%BE%D1%80%D0%BE%D0%B4%D0%BA%D0%B8-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D1%96-%D0%BD%D0%B0-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=buD-Vj0ZAWMJzYR3nmV1RoEtlqBuK5Kuykqd4ywlvlY=",
+      "type": "snacks",
+      "calories": "435.7",
+      "price": "20",
+      "composition": "well-fried chicken nuggets dipped in salt and spices"
+    },
+    {
+      "id": 12,
+      "name": "Big Nuggets",
+      "img": "https://media.istockphoto.com/id/619635702/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BC%D0%B0%D0%B6%D0%B5%D0%BD%D1%96-%D0%BA%D1%83%D1%80%D1%8F%D1%87%D1%96-%D0%BD%D0%B0%D0%B3%D0%B5%D1%82%D1%81%D0%B8.jpg?s=612x612&w=0&k=20&c=OSEW3QhUP3unzWVMopAgTNL2Rd-GXcEU_0Xm0NaLQMg=",
+      "type": "snacks",
+      "calories": "825.6",
+      "price": "30",
+      "composition": "well-fried chicken nuggets dipped in salt and spices"
+    },
+    {
+      "id": 13,
+      "name": "Ketchup",
+      "img": "https://media.istockphoto.com/id/1043912558/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BD%D0%B8%D0%B9-%D1%81%D0%BE%D1%83%D1%81.jpg?s=612x612&w=0&k=20&c=N7CMdifcA9XUDHZT90GYLaWxH1R_jpG1Ittn23eBFxA=",
+      "type": "snacks",
+      "calories": "85.3",
+      "price": "5",
+      "composition": "Ketchup"
+    },
+    {
+      "id": 14,
+      "name": "Mayonnaise",
+      "img": "https://media.istockphoto.com/id/1195877732/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D0%B8%D0%B9-%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%80%D0%BD%D0%B8%D0%B9-%D1%81%D0%BE%D1%83%D1%81-%D0%B2-%D0%BC%D0%B8%D1%81%D1%86%D1%96-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D1%96%D0%B9-%D0%BD%D0%B0-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=GpC5m6p1VE3CPMP2UfdUMRAPtU6hNrLQfbu7g08P8FM=",
+      "type": "snacks",
+      "calories": "105.7",
+      "price": "5",
+      "composition": "Mayonnaise"
+    },
+    {
+      "id": 15,
+      "name": "Mustard",
+      "img": "https://media.istockphoto.com/id/1082600432/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BC%D0%B8%D1%81%D0%BA%D0%B0-%D0%B7-%D0%B3%D1%96%D1%80%D1%87%D0%B8%D1%86%D0%B5%D1%8E-%D1%96-%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D0%BC-%D1%81%D0%BE%D1%83%D1%81%D0%BE%D0%BC.jpg?s=612x612&w=0&k=20&c=-P2oTaTh9LyQYFE5nh-N64C1O22wyNgEo3Scs9fvMSA=",
+      "type": "snacks",
+      "calories": "65.3",
+      "price": "5",
+      "composition": "Mustard"
+    },
+    {
+      "id": 16,
+      "name": "Cola",
+      "img": "https://media.istockphoto.com/id/458464735/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BA%D0%BE%D0%BA%D1%81.jpg?s=612x612&w=0&k=20&c=tfZvC31Orb6lHja5THkGjkD1gbvo2penUdiw_hyderY=",
+      "type": "soda",
+      "calories": "150",
+      "price": "8",
+      "composition": "Cola"
+    },
+    {
+      "id": 17,
+      "name": "Fanta",
+      "img": "https://media.istockphoto.com/id/519573232/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D0%B7%D1%96%D1%8F-%D0%BF%D0%BE%D0%BC%D0%B0%D1%80%D0%B0%D0%BD%D1%87%D0%B5%D0%B2%D0%B8%D0%B9-%D0%BC%D0%BE%D0%B6%D0%B5.jpg?s=612x612&w=0&k=20&c=WVsjCHUrrkc-p3eEEQnqiwtG0bOwh7Y_YrCFC2rTm04=",
+      "type": "soda",
+      "calories": "150",
+      "price": "8",
+      "composition": "Fanta"
+    },
+    {
+      "id": 18,
+      "name": "Pepsi",
+      "img": "https://media.istockphoto.com/id/459396911/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%B5%D0%BF%D1%81%D1%96-%D0%BC%D0%BE%D0%B6%D0%B5-%D0%B7-%D0%BA%D1%80%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%D0%BA%D0%B0%D0%BC%D0%B8-%D0%B2%D0%BE%D0%B4%D0%B8.jpg?s=612x612&w=0&k=20&c=UdDoPiMKJ4hJbz_WZr4vxsTuWaGgfnAs9fhn-A3znwc=",
+      "type": "soda",
+      "calories": "150",
+      "price": "8",
+      "composition": "Pepsi"
+    },
+    {
+      "id": 19,
+      "name": "Schweppes",
+      "img": "https://media.istockphoto.com/id/531417496/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%88%D0%B2%D0%B5%D0%BF%D0%BF%D0%B5%D1%81-%D1%96%D0%BD%D0%B4%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B0-%D1%82%D0%BE%D0%BD%D1%96%D0%B7%D1%83%D1%8E%D1%87%D0%B0-%D0%B2%D0%BE%D0%B4%D0%B0-%D0%BC%D0%BE%D0%B6%D0%B5.jpg?s=612x612&w=0&k=20&c=0Ny_7XMAq4j6wxeVUECXGWRymH3nTOu6woGBPlX1eio=",
+      "type": "soda",
+      "calories": "120",
+      "price": "8",
+      "composition": "Schweppes"
+    },
+    {
+      "id": 20,
+      "name": "RedBull",
+      "img": "https://media.istockphoto.com/id/458067553/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D0%B5%D0%B4-%D0%B1%D1%83%D0%BB%D0%BB.jpg?s=612x612&w=0&k=20&c=gKG6SYtCMGLZavL10SR7wgiE83tZwakf45oQsuamk5U=",
+      "type": "soda",
+      "calories": "180",
+      "price": "12",
+      "composition": "RedBull"
+    },
+    {
+      "id": 21,
+      "name": "Water",
+      "img": "https://media.istockphoto.com/id/1032678242/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B2-%D0%BF%D0%BB%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%D1%96%D0%B9-%D0%BF%D0%BB%D1%8F%D1%88%D1%86%D1%96-%D0%BD%D0%B0-%D1%96%D0%B7%D0%BE%D0%BB%D1%8C%D0%BE%D0%B2%D0%B0%D0%BD%D0%BE%D0%BC%D1%83-%D0%B1%D1%96%D0%BB%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=eGn-zy9YisFdtHmyQkaa8Tbsnqz-Mqt8qr_pv4eRJ6c=",
+      "type": "soda",
+      "calories": "10",
+      "price": "6",
+      "composition": "Water"
     }
   ]
 }

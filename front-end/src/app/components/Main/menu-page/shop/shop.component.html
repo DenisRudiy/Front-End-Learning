@@ -1,0 +1,38 @@
+<div class="shop_title">
+  <div class="grid grid-cols-1 gap-4 place-items-center text-center">
+    <div class="shop_block">
+      <h2>Always Tasty Burger</h2>
+    </div>
+    <h1>Try Our Menu Now</h1>
+  </div>
+</div>
+
+<div class="shop">
+  <div class="filters">
+    <button>Burgers</button>
+    <button>Snacks</button>
+    <button>Soda</button>
+    <button>Menu</button>
+  </div>
+  <div class="shop_items">
+    <div
+      *ngFor="let i of food | paginate : { itemsPerPage: 8, currentPage: page }"
+      class="shop_card"
+    >
+      <div class="item_detail">
+        <img src="{{ i.img }}" alt="" />
+        <div class="item_text">
+          <h2>{{ i.name }}</h2>
+          <h4>${{ i.price }}</h4>
+          <button class="btn_buy">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="paginator_container">
+    <pagination-controls
+      (pageChange)="page = $event"
+      class="paginator"
+    ></pagination-controls>
+  </div>
+</div>
