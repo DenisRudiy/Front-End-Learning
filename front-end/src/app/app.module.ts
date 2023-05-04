@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router'
 import { AppRoutingModule } from './app-routing.module'
 import { NgxPaginationModule } from 'ngx-pagination'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 //  Apps Imports
 import { AppComponent } from './app.component'
@@ -19,10 +20,14 @@ import { ShopComponent } from './components/Main/menu-page/shop/shop.component'
 import { MainComponent } from './components/Main/main/main.component'
 import { ProdListComponent } from './components/Main/home-page/prod-list/prod-list.component'
 import { MenuListComponent } from './components/Main/home-page/menu-list/menu-list.component'
+import { FillerComponent } from './components/filler/filler.component'
+import { ItemDetailComponent } from './components/Main/menu-page/shop/item-detail/item-detail.component'
 
 //  PrimeNG Imports
 import { AvatarModule } from 'primeng/avatar'
 import { ButtonModule } from 'primeng/button'
+import { DialogModule } from 'primeng/dialog'
+import { SidebarModule } from 'primeng/sidebar'
 
 @NgModule({
   declarations: [
@@ -37,7 +42,9 @@ import { ButtonModule } from 'primeng/button'
     BannerComponent,
     HomePageComponent,
     MenuPageComponent,
-    ShopComponent
+    ShopComponent,
+    FillerComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +54,10 @@ import { ButtonModule } from 'primeng/button'
     ButtonModule,
     RouterModule.forRoot([]),
     AppRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    DialogModule,
+    BrowserAnimationsModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

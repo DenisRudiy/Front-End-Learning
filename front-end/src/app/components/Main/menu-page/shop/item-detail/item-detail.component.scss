@@ -1,0 +1,47 @@
+.modal_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.2px;
+  img {
+    border-radius: 10px;
+  }
+  .item_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .item_composition {
+      font-size: calc(8px + 1vw);
+    }
+    .item_price {
+      font-size: calc(18px + 1.5vw);
+    }
+    p {
+      font-size: calc(10px + 1vw);
+    }
+    .item_buttons {
+      display: flex;
+      gap: 10px;
+      .btn_buy {
+        @apply uppercase text-white;
+        max-width: 300px;
+        max-height: 60px;
+        min-height: 25px;
+        width: 19vw;
+        height: 3.5vw;
+        background-color: #bf2222;
+        border-radius: 10px;
+        transition: all 0.5s;
+        margin-bottom: calc(10px + 1vw);
+      }
+      .btn_buy:hover {
+        background-color: #8a2222;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

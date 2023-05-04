@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router'
 import { CommonModule } from '@angular/common'
 import { HomePageComponent } from './components/Main/home-page/home-page.component'
 import { MenuPageComponent } from './components/Main/menu-page/menu-page.component'
+import { FillerComponent } from './components/filler/filler.component'
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'menu', component: MenuPageComponent }
+  { path: 'menu', component: MenuPageComponent },
+  { path: 'filler', component: FillerComponent }
 ]
 
 @NgModule({

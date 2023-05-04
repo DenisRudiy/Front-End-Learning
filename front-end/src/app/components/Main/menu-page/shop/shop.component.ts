@@ -10,11 +10,32 @@ import { FoodService } from 'src/app/services/food.service'
 export class ShopComponent implements OnInit {
   food!: Food[]
   page: number = 1
+  visible!: boolean
+  currentItem!: Food
+  filteredFood!: Food[]
+
   constructor(private service: FoodService) {}
 
   ngOnInit(): void {
     this.service.getAll().subscribe((data) => {
       this.food = data
+      this.filteredFood = data
     })
+  }
+
+  showDialog() {
+    this.visible = true
+  }
+  getItem(item: Food) {
+    this.currentItem = item
+    this.showDialog()
+  }
+
+  filterItems(filter: string) {
+    if (filter === '') {
+      this.filteredFood = this.food
+    } else {
+      this.filteredFood = this.food.filter((f) => f.type === filter)
+    }
   }
 }

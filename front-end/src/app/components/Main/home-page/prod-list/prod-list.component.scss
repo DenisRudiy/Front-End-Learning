@@ -2,6 +2,7 @@
 
 .prod_list {
   height: 250px;
+  animation: 1s show ease;
   .order {
     @apply uppercase text-white text-xl;
     width: 200px;
@@ -50,6 +51,7 @@
 .wrapper-body {
   padding: 10vw 2.5vw 5vw 2.5vw;
   align-items: center;
+  animation: 1s show ease;
 
   .wrapper {
     position: relative;

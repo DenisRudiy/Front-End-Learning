@@ -20,3 +20,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

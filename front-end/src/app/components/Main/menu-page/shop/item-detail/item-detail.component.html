@@ -1,0 +1,16 @@
+<ng-template pTemplate="header">
+  <span class="text-xl font-bold">Header Content</span>
+</ng-template>
+<div class="modal_body">
+  <img src="{{ item ? item.img : '' }}" alt="" />
+  <div class="item_detail">
+    <p class="item_composition">{{ item ? item.composition : '' }}</p>
+    <p>{{ item ? item.calories : '' }} ccal</p>
+    <p class="item_price">${{ item ? item.price : '' }}</p>
+    <div class="item_buttons">
+      <button class="btn_buy">Buy</button>
+    </div>
+  </div>
+</div>
+
+<ng-template pTemplate="footer"> </ng-template>

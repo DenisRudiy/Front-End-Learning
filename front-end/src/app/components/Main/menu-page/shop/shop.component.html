@@ -9,18 +9,24 @@
 
 <div class="shop">
   <div class="filters">
-    <button>Burgers</button>
-    <button>Snacks</button>
-    <button>Soda</button>
-    <button>Menu</button>
+    <button (click)="filterItems('burger')">Burgers</button>
+    <button (click)="filterItems('snacks')">Snacks</button>
+    <button (click)="filterItems('soda')">Soda</button>
+    <button (click)="filterItems('menu')">Menu</button>
+    <button (click)="filterItems('')" class="del_filters">
+      <i class="pi pi-sort-amount-up-alt"></i>
+    </button>
   </div>
   <div class="shop_items">
     <div
-      *ngFor="let i of food | paginate : { itemsPerPage: 8, currentPage: page }"
+      *ngFor="
+        let i of filteredFood
+          | paginate : { itemsPerPage: 8, currentPage: page }
+      "
       class="shop_card"
     >
       <div class="item_detail">
-        <img src="{{ i.img }}" alt="" />
+        <img src="{{ i.img }}" alt="" (click)="getItem(i)" />
         <div class="item_text">
           <h2>{{ i.name }}</h2>
           <h4>${{ i.price }}</h4>
@@ -36,3 +42,14 @@
     ></pagination-controls>
   </div>
 </div>
+<p-dialog
+  header="{{ currentItem ? currentItem.name : '' }}"
+  [(visible)]="visible"
+  [style]="{ width: '70vw' }"
+  class="modal"
+  [modal]="true"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <app-item-detail [item]="currentItem"></app-item-detail>
+</p-dialog>

@@ -6,4 +6,5 @@ export class Food {
   calories!: number
   price!: number
   composition!: string
+  foods_id!: Array<number>
 }
