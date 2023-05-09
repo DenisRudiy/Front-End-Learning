@@ -29,3 +29,19 @@
     }
   }
 }
+::ng-deep {
+  .p-sidebar-left {
+    width: 450px !important;
+  }
+  .p-sidebar {
+    background: rgb(246, 242, 226);
+  }
+  .p-sidebar-content {
+    overflow-y: scroll !important;
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important;
+  }
+  .p-sidebar-content::-webkit-scrollbar {
+    display: none;
+  }
+}

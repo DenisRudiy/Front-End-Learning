@@ -24,7 +24,7 @@
     <div class="nav_content">
       <button
         class="pi pi-shopping-cart ease-out duration-300"
-        routerLink="filler"
+        (click)="sidebarVisible = true"
       ></button>
     </div>
     <div class="nav_arrow"><span class="pi pi-angle-right"></span></div>
@@ -33,3 +33,7 @@
     </div>
   </div>
 </div>
+
+<p-sidebar [(visible)]="sidebarVisible">
+  <app-cart (changeVisible)="changeVisible()"></app-cart>
+</p-sidebar>

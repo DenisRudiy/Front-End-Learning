@@ -1,0 +1,58 @@
+<p-toast></p-toast>
+<div class="cart_head">
+  <h1>Your Cart</h1>
+</div>
+<hr class="line" />
+<div *ngIf="showCart; else noCart">
+  <div class="cart_body">
+    <div
+      class="cart_element"
+      *ngFor="
+        let item of cartFood | paginate : { itemsPerPage: 6, currentPage: page }
+      "
+    >
+      <div class="cart_item">
+        <img src="{{ item.img }}" alt="" />
+        <div class="item_info">
+          <p>{{ item.name }}</p>
+          <p>{{ item.calories }} ccal</p>
+          <p>${{ item.price }}</p>
+        </div>
+        <div class="item_buttons">
+          <button class="btn_delete" (click)="onDelete(item)">Delete</button>
+          <div class="btn_count">
+            <button (click)="onMinus(item)">-</button>
+            <p>{{ item.count }}</p>
+            <button (click)="onPlus(item)">+</button>
+          </div>
+        </div>
+      </div>
+      <hr class="line" />
+    </div>
+  </div>
+  <pagination-controls
+    (pageChange)="page = $event"
+    class="paginator"
+    [hidden]="hidePaginate"
+  ></pagination-controls>
+
+  <div class="cart_total">
+    <div class="total_content">
+      <h1>Total ${{ totalPrice }}</h1>
+    </div>
+    <div>
+      <button class="btn_buy" (click)="Click()">Make Purchase</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #noCart>
+  <div class="empty_cart">
+    <h1>Your cart is empty :(</h1>
+    <h2>
+      If you want to order, go back to our menu page and choose an order that
+      will brighten up your mood for the day :D
+    </h2>
+    <button class="btn_buy" (click)="closeSidebar()">Go Back</button>
+  </div>
+</ng-template>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { Subscription } from 'rxjs'
 import { Food } from 'src/app/interfaces/food'
 import { FoodService } from 'src/app/services/food.service'
 
@@ -8,11 +9,13 @@ import { FoodService } from 'src/app/services/food.service'
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
+  clickEventSubscription!: Subscription
   food!: Food[]
   page: number = 1
   visible!: boolean
   currentItem!: Food
   filteredFood!: Food[]
+  show: boolean = false
 
   constructor(private service: FoodService) {}
 
@@ -32,10 +35,15 @@ export class ShopComponent implements OnInit {
   }
 
   filterItems(filter: string) {
+    this.page = 1
     if (filter === '') {
       this.filteredFood = this.food
     } else {
       this.filteredFood = this.food.filter((f) => f.type === filter)
     }
+  }
+
+  ToCart(data: Food) {
+    this.service.sendToCart(data)
   }
 }

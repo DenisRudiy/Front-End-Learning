@@ -30,7 +30,7 @@
         <div class="item_text">
           <h2>{{ i.name }}</h2>
           <h4>${{ i.price }}</h4>
-          <button class="btn_buy">Add</button>
+          <button class="btn_buy" (click)="ToCart(i)">Add</button>
         </div>
       </div>
     </div>
@@ -39,6 +39,7 @@
     <pagination-controls
       (pageChange)="page = $event"
       class="paginator"
+      [hidden]="show"
     ></pagination-controls>
   </div>
 </div>

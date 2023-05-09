@@ -7,12 +7,10 @@ import { AppRoutingModule } from './app-routing.module'
 import { NgxPaginationModule } from 'ngx-pagination'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
-//  Apps Imports
+//  Components Imports
 import { AppComponent } from './app.component'
 import { FooterComponent } from './components/Main/footer/footer.component'
 import { HeaderComponent } from './components/Main/header/header.component'
-import { RegistrationComponent } from './components/Additional/registration/registration.component'
-import { LoginComponent } from './components/Additional/login/login.component'
 import { BannerComponent } from './components/Main/home-page/banner/banner.component'
 import { HomePageComponent } from './components/Main/home-page/home-page.component'
 import { MenuPageComponent } from './components/Main/menu-page/menu-page.component'
@@ -22,20 +20,20 @@ import { ProdListComponent } from './components/Main/home-page/prod-list/prod-li
 import { MenuListComponent } from './components/Main/home-page/menu-list/menu-list.component'
 import { FillerComponent } from './components/filler/filler.component'
 import { ItemDetailComponent } from './components/Main/menu-page/shop/item-detail/item-detail.component'
+import { CartComponent } from './components/Main/cart/cart.component'
 
 //  PrimeNG Imports
 import { AvatarModule } from 'primeng/avatar'
 import { ButtonModule } from 'primeng/button'
 import { DialogModule } from 'primeng/dialog'
 import { SidebarModule } from 'primeng/sidebar'
+import { ToastModule } from 'primeng/toast'
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    RegistrationComponent,
-    LoginComponent,
     MainComponent,
     ProdListComponent,
     MenuListComponent,
@@ -44,7 +42,8 @@ import { SidebarModule } from 'primeng/sidebar'
     MenuPageComponent,
     ShopComponent,
     FillerComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +56,8 @@ import { SidebarModule } from 'primeng/sidebar'
     NgxPaginationModule,
     DialogModule,
     BrowserAnimationsModule,
-    SidebarModule
+    SidebarModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

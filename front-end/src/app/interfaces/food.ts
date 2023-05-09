@@ -7,4 +7,5 @@ export class Food {
   price!: number
   composition!: string
   foods_id!: Array<number>
+  count!: number
 }

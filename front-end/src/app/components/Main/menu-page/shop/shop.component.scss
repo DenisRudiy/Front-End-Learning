@@ -42,12 +42,13 @@
       height: 6vw;
       background-color: #ffc045;
       border-radius: 10px;
-      transition: all 0.5s;
+      transition: all 0.15s;
       margin: 5px;
     }
-
     button:hover {
       background-color: #d89a1e;
+    }
+    button:active {
       transform: scale(1.05);
     }
 
@@ -59,12 +60,14 @@
       height: 6vw;
       background-color: #ffc045;
       border-radius: 10px;
-      transition: all 0.5s;
+      transition: all 0.1s;
       margin: 5px;
     }
 
     .del_filters:hover {
       background-color: #d89a1e;
+    }
+    .del_filters:active {
       transform: scale(1.05);
     }
   }
@@ -75,7 +78,7 @@
     max-height: 1032px;
     min-height: 370px;
     .shop_card {
-      height: 24.5vw;
+      height: 26vw;
       max-height: 480px;
       min-height: 170px;
       margin-bottom: 50px;
@@ -119,11 +122,13 @@
             height: 3.5vw;
             background-color: #bf2222;
             border-radius: 10px;
-            transition: all 0.5s;
+            transition: all 0.1s;
             margin-bottom: calc(10px + 1vw);
           }
           .btn_buy:hover {
             background-color: #8a2222;
+          }
+          .btn_buy:active {
             transform: scale(1.05);
           }
         }
@@ -134,7 +139,7 @@
     display: flex;
     justify-content: center;
     .paginator {
-      padding-top: 50px;
+      margin-top: calc(20px + 3vw);
     }
   }
 }
@@ -169,6 +174,10 @@
         color: #ffc045;
       }
     }
+  }
+
+  .ngx-pagination li:hover {
+    background-color: #eaa10f;
   }
 
   .ngx-pagination a:hover,
