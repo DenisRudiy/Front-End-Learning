@@ -21,6 +21,7 @@ import { MenuListComponent } from './components/Main/home-page/menu-list/menu-li
 import { FillerComponent } from './components/filler/filler.component'
 import { ItemDetailComponent } from './components/Main/menu-page/shop/item-detail/item-detail.component'
 import { CartComponent } from './components/Main/cart/cart.component'
+import { UserPageComponent } from './components/Main/user-page/user-page.component'
 
 //  PrimeNG Imports
 import { AvatarModule } from 'primeng/avatar'
@@ -43,7 +44,8 @@ import { ToastModule } from 'primeng/toast'
     ShopComponent,
     FillerComponent,
     ItemDetailComponent,
-    CartComponent
+    CartComponent,
+    UserPageComponent
   ],
   imports: [
     BrowserModule,

@@ -44,4 +44,28 @@
   .p-sidebar-content::-webkit-scrollbar {
     display: none;
   }
+  .userModal {
+    .p-dialog-mask {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: normal;
+      .p-dialog {
+        width: 250px !important;
+        height: 500px !important;
+        margin-top: 130px !important;
+        margin-right: 10px !important;
+        .p-dialog-header {
+          background: rgb(246, 242, 226);
+        }
+        .p-dialog-content {
+          background: rgb(246, 242, 226);
+        }
+      }
+    }
+  }
 }

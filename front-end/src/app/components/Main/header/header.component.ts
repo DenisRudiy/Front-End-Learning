@@ -8,6 +8,7 @@ import { FoodService } from 'src/app/services/food.service'
 })
 export class HeaderComponent implements OnInit {
   sidebarVisible: boolean = false
+  dialogVisible: boolean = false
 
   constructor(private service: FoodService) {}
 

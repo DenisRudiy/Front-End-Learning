@@ -29,7 +29,10 @@
     </div>
     <div class="nav_arrow"><span class="pi pi-angle-right"></span></div>
     <div class="nav_content">
-      <button class="pi pi-user ease-out duration-300"></button>
+      <button
+        class="pi pi-user ease-out duration-300"
+        (click)="dialogVisible = true"
+      ></button>
     </div>
   </div>
 </div>
@@ -37,3 +40,14 @@
 <p-sidebar [(visible)]="sidebarVisible">
   <app-cart (changeVisible)="changeVisible()"></app-cart>
 </p-sidebar>
+<p-dialog
+  header="User"
+  [(visible)]="dialogVisible"
+  [position]="'TopRight'"
+  class="userModal"
+  [modal]="true"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <app-user-page></app-user-page>
+</p-dialog>
