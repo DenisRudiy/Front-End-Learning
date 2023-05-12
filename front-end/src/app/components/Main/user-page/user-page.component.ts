@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core'
 
 @Component({
   selector: 'app-user-page',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-page.component.scss']
 })
 export class UserPageComponent {
-
+  @Output() showPageEvent = new EventEmitter<any>()
+  showRegPage() {
+    this.showPageEvent.emit()
+  }
 }

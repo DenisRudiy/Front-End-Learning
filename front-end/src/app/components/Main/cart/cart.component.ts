@@ -1,10 +1,4 @@
-import {
-  Component,
-  EventEmitter,
-  OnInit,
-  Output,
-  ViewChild
-} from '@angular/core'
+import { Component, EventEmitter, Output } from '@angular/core'
 import { Food } from 'src/app/interfaces/food'
 import { FoodService } from 'src/app/services/food.service'
 import { PaginationService } from 'ngx-pagination'
@@ -90,7 +84,7 @@ export class CartComponent {
     this.changeVisible.emit(this.sidebar)
   }
 
-  Click() {
+  onBuy() {
     this.totalPrice = 0
     this.cartFood.splice(0)
     this.showCart = false

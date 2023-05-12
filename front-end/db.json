@@ -8,7 +8,9 @@
       "calories": "642.5",
       "price": 20,
       "composition": "Bun, cheese, cutlet, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [1]
+      "foods_id": [
+        1
+      ]
     },
     {
       "id": 2,
@@ -18,7 +20,9 @@
       "calories": "885.8",
       "price": 30,
       "composition": "Bun, cheese, two cutlets, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [2]
+      "foods_id": [
+        2
+      ]
     },
     {
       "id": 3,
@@ -28,7 +32,9 @@
       "calories": "939.9",
       "price": 45,
       "composition": "Bun, cheese, beef cutlet, beacon, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [3]
+      "foods_id": [
+        3
+      ]
     },
     {
       "id": 4,
@@ -38,7 +44,9 @@
       "calories": "539.7",
       "price": 35,
       "composition": "Bun, cheese, chicken cutlet, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [4]
+      "foods_id": [
+        4
+      ]
     },
     {
       "id": 5,
@@ -48,7 +56,9 @@
       "calories": "729.5",
       "price": 45,
       "composition": "Bun, double cheese, cutlet, beacon, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [5]
+      "foods_id": [
+        5
+      ]
     },
     {
       "id": 6,
@@ -58,7 +68,9 @@
       "calories": "899.2",
       "price": 50,
       "composition": "Bun, cheese, big beef cutlet, double beacon, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [6]
+      "foods_id": [
+        6
+      ]
     },
     {
       "id": 7,
@@ -68,7 +80,9 @@
       "calories": "1029.2",
       "price": 65,
       "composition": "Bun, double cheese, double big beef cutlet, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [7]
+      "foods_id": [
+        7
+      ]
     },
     {
       "id": 8,
@@ -78,7 +92,9 @@
       "calories": "529.2",
       "price": 30,
       "composition": "Bun, fish cutlet, ketchup, mayonnaise, salad, tomato",
-      "foods_id": [8]
+      "foods_id": [
+        8
+      ]
     },
     {
       "id": 9,
@@ -88,7 +104,9 @@
       "calories": "335.7",
       "price": 10,
       "composition": "well-fried fries dipped in salt and spices",
-      "foods_id": [9]
+      "foods_id": [
+        9
+      ]
     },
     {
       "id": 10,
@@ -98,7 +116,9 @@
       "calories": "585.7",
       "price": 20,
       "composition": "well-fried fries dipped in salt and spices",
-      "foods_id": [10]
+      "foods_id": [
+        10
+      ]
     },
     {
       "id": 11,
@@ -108,7 +128,9 @@
       "calories": "435.7",
       "price": 20,
       "composition": "well-fried chicken nuggets dipped in salt and spices",
-      "foods_id": [11]
+      "foods_id": [
+        11
+      ]
     },
     {
       "id": 12,
@@ -118,7 +140,9 @@
       "calories": "825.6",
       "price": 30,
       "composition": "well-fried chicken nuggets dipped in salt and spices",
-      "foods_id": [12]
+      "foods_id": [
+        12
+      ]
     },
     {
       "id": 13,
@@ -128,7 +152,9 @@
       "calories": "85.3",
       "price": 5,
       "composition": "Ketchup",
-      "foods_id": [13]
+      "foods_id": [
+        13
+      ]
     },
     {
       "id": 14,
@@ -138,7 +164,9 @@
       "calories": "105.7",
       "price": 5,
       "composition": "Mayonnaise",
-      "foods_id": [14]
+      "foods_id": [
+        14
+      ]
     },
     {
       "id": 15,
@@ -148,7 +176,9 @@
       "calories": "65.3",
       "price": 5,
       "composition": "Mustard",
-      "foods_id": [15]
+      "foods_id": [
+        15
+      ]
     },
     {
       "id": 16,
@@ -158,7 +188,9 @@
       "calories": "150",
       "price": 8,
       "composition": "Cola",
-      "foods_id": [16]
+      "foods_id": [
+        16
+      ]
     },
     {
       "id": 17,
@@ -168,7 +200,9 @@
       "calories": "150",
       "price": 8,
       "composition": "Fanta",
-      "foods_id": [17]
+      "foods_id": [
+        17
+      ]
     },
     {
       "id": 18,
@@ -178,7 +212,9 @@
       "calories": "150",
       "price": 8,
       "composition": "Pepsi",
-      "foods_id": [18]
+      "foods_id": [
+        18
+      ]
     },
     {
       "id": 19,
@@ -188,7 +224,9 @@
       "calories": "120",
       "price": 8,
       "composition": "Schweppes",
-      "foods_id": [19]
+      "foods_id": [
+        19
+      ]
     },
     {
       "id": 20,
@@ -198,7 +236,9 @@
       "calories": "180",
       "price": 12,
       "composition": "RedBull",
-      "foods_id": [20]
+      "foods_id": [
+        20
+      ]
     },
     {
       "id": 21,
@@ -208,7 +248,9 @@
       "calories": "10",
       "price": 6,
       "composition": "Water",
-      "foods_id": [21]
+      "foods_id": [
+        21
+      ]
     },
     {
       "id": 22,
@@ -218,7 +260,11 @@
       "calories": "1127",
       "price": 50,
       "composition": "Royal Burger, Small Fries, Cola",
-      "foods_id": [3, 9, 16]
+      "foods_id": [
+        3,
+        9,
+        16
+      ]
     },
     {
       "id": 23,
@@ -228,7 +274,10 @@
       "calories": "1127",
       "price": 65,
       "composition": "Baby John, Big Fries",
-      "foods_id": [6, 10]
+      "foods_id": [
+        6,
+        10
+      ]
     },
     {
       "id": 24,
@@ -238,7 +287,30 @@
       "calories": "1827",
       "price": 92,
       "composition": "King, Big Fries, Ketchup, RedBull",
-      "foods_id": [7, 10, 13, 20]
+      "foods_id": [
+        7,
+        10,
+        13,
+        20
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Denis",
+      "email": "rudenis2311@gmail.com",
+      "password": "12345",
+      "card": "4444 4444 4444 4444",
+      "logo": "logo1"
+    },
+    {
+      "id": 2,
+      "username": "Denis",
+      "email": "rudenis2311@gmail.com",
+      "password": "1234",
+      "card": "4325-2353-5345-3535",
+      "logo": "none"
     }
   ]
 }

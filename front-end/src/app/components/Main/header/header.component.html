@@ -49,5 +49,9 @@
   [draggable]="false"
   [resizable]="false"
 >
-  <app-user-page></app-user-page>
+  <app-user-page (showPageEvent)="showReg()"></app-user-page>
 </p-dialog>
+
+<p-sidebar [(visible)]="regVisible" [fullScreen]="true">
+  <app-registration (hidePageEvent)="showReg()"></app-registration>
+</p-sidebar>

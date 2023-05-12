@@ -1,20 +1,20 @@
-import { Component, OnInit } from '@angular/core'
-import { FoodService } from 'src/app/services/food.service'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   sidebarVisible: boolean = false
   dialogVisible: boolean = false
-
-  constructor(private service: FoodService) {}
-
-  ngOnInit(): void {}
+  regVisible: boolean = false
 
   changeVisible() {
     this.sidebarVisible = false
+  }
+
+  showReg() {
+    this.regVisible = !this.regVisible
   }
 }

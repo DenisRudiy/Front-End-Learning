@@ -22,6 +22,7 @@ import { FillerComponent } from './components/filler/filler.component'
 import { ItemDetailComponent } from './components/Main/menu-page/shop/item-detail/item-detail.component'
 import { CartComponent } from './components/Main/cart/cart.component'
 import { UserPageComponent } from './components/Main/user-page/user-page.component'
+import { RegistrationComponent } from './components/Main/user-page/registration/registration.component'
 
 //  PrimeNG Imports
 import { AvatarModule } from 'primeng/avatar'
@@ -29,6 +30,9 @@ import { ButtonModule } from 'primeng/button'
 import { DialogModule } from 'primeng/dialog'
 import { SidebarModule } from 'primeng/sidebar'
 import { ToastModule } from 'primeng/toast'
+import { StyleClassModule } from 'primeng/styleclass'
+import { InputMaskModule } from 'primeng/inputmask'
+import { PasswordModule } from 'primeng/password'
 
 @NgModule({
   declarations: [
@@ -45,7 +49,8 @@ import { ToastModule } from 'primeng/toast'
     FillerComponent,
     ItemDetailComponent,
     CartComponent,
-    UserPageComponent
+    UserPageComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,10 @@ import { ToastModule } from 'primeng/toast'
     DialogModule,
     BrowserAnimationsModule,
     SidebarModule,
-    ToastModule
+    ToastModule,
+    StyleClassModule,
+    InputMaskModule,
+    PasswordModule
   ],
   providers: [],
   bootstrap: [AppComponent]

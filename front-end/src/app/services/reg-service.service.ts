@@ -1,29 +1,29 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { User } from '../interfaces/user';
+import { HttpClient } from '@angular/common/http'
+import { Injectable } from '@angular/core'
+import { Observable, Subject } from 'rxjs'
+import { User } from '../interfaces/user'
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class RegServiceService {
-  private backUrl = 'http://localhost:2311/api/users';
+  url = 'http://localhost:3000/users/'
 
   constructor(private http: HttpClient) {}
 
   getUser(): Observable<User[]> {
-    return this.http.get<User[]>(this.backUrl + '/get');
+    return this.http.get<User[]>(this.url)
   }
 
-  createUser(guitar: User): Observable<any> {
-    return this.http.post(this.backUrl + '/create', guitar);
+  createUser(user: User): Observable<User> {
+    return this.http.post<User>(this.url, user)
   }
 
   updateUser(guitar: User): Observable<Object> {
-    return this.http.put(`${this.backUrl + '/update'}/${guitar.id}`, guitar);
+    return this.http.put(`${this.url}/${guitar.id}`, guitar)
   }
 
   deleteUser(guitar: User): Observable<User[]> {
-    return this.http.delete<User[]>(this.backUrl + '/delete/' + guitar.id);
+    return this.http.delete<User[]>(this.url + guitar.id)
   }
 }

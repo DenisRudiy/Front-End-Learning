@@ -1,0 +1,88 @@
+<p-toast></p-toast>
+<div class="reg_item">
+  <div class="reg_body">
+    <div class="reg_title">
+      <h1>Create a new account</h1>
+    </div>
+    <div class="reg_form">
+      <div class="input_group">
+        <span class="p-inputgroup-addon">
+          <i class="pi pi-user"></i>
+        </span>
+        <input
+          [(ngModel)]="username"
+          pInputText
+          placeholder="Username"
+          class="reg_input"
+          id="username"
+          maxlength="25"
+          (click)="changeColor('username')"
+        />
+      </div>
+
+      <div class="input_group">
+        <span class="p-inputgroup-addon">
+          <i class="pi pi-at"></i>
+        </span>
+        <input
+          [(ngModel)]="email"
+          pInputText
+          placeholder="Email"
+          class="reg_input"
+          id="email"
+          maxlength="30"
+          (click)="changeColor('email')"
+        />
+      </div>
+
+      <div class="input_group">
+        <span class="p-inputgroup-addon">
+          <i class="pi pi-lock"></i>
+        </span>
+        <p-password
+          id="firstPassword"
+          [(ngModel)]="firstPassword"
+          [toggleMask]="true"
+          placeholder="Password"
+          [feedback]="false"
+          maxlength="20"
+          class="ng-dirty"
+          (click)="changeColor('firstPassword')"
+        ></p-password>
+      </div>
+
+      <div class="input_group">
+        <span class="p-inputgroup-addon">
+          <i class="pi pi-lock"></i>
+        </span>
+        <p-password
+          id="secondPassword"
+          [(ngModel)]="secondPassword"
+          [toggleMask]="true"
+          placeholder="Password"
+          [feedback]="false"
+          maxlength="20"
+          class="ng-dirty"
+          (click)="changeColor('secondPassword')"
+        ></p-password>
+      </div>
+
+      <div class="input_group">
+        <span class="p-inputgroup-addon">
+          <i class="pi pi-credit-card"></i>
+        </span>
+        <p-inputMask
+          mask="9999-9999-9999-9999"
+          [(ngModel)]="card"
+          id="card"
+          placeholder="Card Number"
+          class="ng-dirty"
+          (click)="changeColor('card')"
+        ></p-inputMask>
+      </div>
+    </div>
+    <div class="reg_button">
+      <button class="create" (click)="createUser()">Create account</button>
+    </div>
+  </div>
+</div>
