@@ -8,6 +8,7 @@ import { User } from '../interfaces/user'
 })
 export class RegServiceService {
   url = 'http://localhost:3000/users/'
+  private loginUser = new Subject<User>()
 
   constructor(private http: HttpClient) {}
 
@@ -25,5 +26,13 @@ export class RegServiceService {
 
   deleteUser(guitar: User): Observable<User[]> {
     return this.http.delete<User[]>(this.url + guitar.id)
+  }
+
+  setLoginUser(data: User) {
+    this.loginUser.next(data)
+  }
+
+  getLoginUser(): Observable<User> {
+    return this.loginUser.asObservable()
   }
 }

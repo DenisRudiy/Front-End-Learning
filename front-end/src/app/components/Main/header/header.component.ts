@@ -9,6 +9,8 @@ export class HeaderComponent {
   sidebarVisible: boolean = false
   dialogVisible: boolean = false
   regVisible: boolean = false
+  logVisible: boolean = false
+  editVisible: boolean = false
 
   changeVisible() {
     this.sidebarVisible = false
@@ -16,5 +18,9 @@ export class HeaderComponent {
 
   showReg() {
     this.regVisible = !this.regVisible
+  }
+
+  showLog() {
+    this.logVisible = !this.logVisible
   }
 }

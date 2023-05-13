@@ -32,7 +32,8 @@ import { SidebarModule } from 'primeng/sidebar'
 import { ToastModule } from 'primeng/toast'
 import { StyleClassModule } from 'primeng/styleclass'
 import { InputMaskModule } from 'primeng/inputmask'
-import { PasswordModule } from 'primeng/password'
+import { PasswordModule } from 'primeng/password';
+import { LoginComponent } from './components/Main/user-page/login/login.component'
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { PasswordModule } from 'primeng/password'
     ItemDetailComponent,
     CartComponent,
     UserPageComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

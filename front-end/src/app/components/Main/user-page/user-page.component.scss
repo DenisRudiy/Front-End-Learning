@@ -27,41 +27,88 @@
   align-items: center;
   font-family: 'Roboto Condensed', sans-serif;
   margin-top: 20px;
-
   .user_logo {
     width: 80px;
     height: 80px;
     background-color: white;
     border-radius: 50%;
-    background-image: url('https://img.icons8.com/material/96/A6A6A6/user-male-circle--v1.png');
     background-size: 80px;
-    padding: 0;
+    padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
-  .user_info {
-    margin-top: 20px;
-  }
-  .login {
-    width: 150px;
-    height: 45px;
-    background-color: #bf2222;
-    border-radius: 10px;
-    color: white;
-    transition: all 0.1s;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  .login:hover {
-    background-color: #8a2222;
-  }
-  .login:active {
-    transform: scale(1.05);
-  }
+  .non_register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  hr {
-    width: 100%;
-    border: 1.5px solid rgb(122, 111, 79);
-    border-radius: 10px;
+    .user_info {
+      margin-top: 20px;
+    }
+    .login {
+      width: 150px;
+      height: 45px;
+      background-color: #bf2222;
+      border-radius: 10px;
+      color: white;
+      transition: all 0.1s;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .login:hover {
+      background-color: #8a2222;
+    }
+    .login:active {
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 100%;
+      border: 1.5px solid rgb(122, 111, 79);
+      border-radius: 10px;
+    }
+  }
+  .login_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15px;
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    .login_edit {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .edit_button {
+        width: 150px;
+        height: 45px;
+        background-color: #bf2222;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.1s;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .edit_button:hover {
+        background-color: #8a2222;
+      }
+      .edit_button:active {
+        transform: scale(1.05);
+      }
+      hr {
+        width: 100%;
+        border: 1.5px solid rgb(122, 111, 79);
+        border-radius: 10px;
+      }
+    }
   }
 }

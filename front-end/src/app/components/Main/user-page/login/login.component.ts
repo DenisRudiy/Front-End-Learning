@@ -1,22 +1,21 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core'
+import { Component, EventEmitter, Output } from '@angular/core'
 import { MessageService } from 'primeng/api'
 import { User } from 'src/app/interfaces/user'
 import { RegServiceService } from 'src/app/services/reg-service.service'
 
 @Component({
-  selector: 'app-registration',
-  templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.scss'],
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
   providers: [MessageService]
 })
-export class RegistrationComponent implements OnInit {
+export class LoginComponent {
   users: User[] = []
-  new_user: User = new User()
-  username: string = ''
+  currentUser: User = new User()
+
   email: string = ''
   firstPassword: string = ''
   secondPassword: string = ''
-  card: string = ''
 
   constructor(
     private messageService: MessageService,
@@ -29,10 +28,6 @@ export class RegistrationComponent implements OnInit {
     })
   }
 
-  onAdd() {
-    this.regService.createUser(this.new_user).subscribe((data) => {})
-  }
-
   changeColor(id: string) {
     if (id == 'firstPassword' || id == 'secondPassword' || id == 'card') {
       document.getElementById(id)!.classList.remove('ng-invalid')
@@ -42,37 +37,28 @@ export class RegistrationComponent implements OnInit {
   }
 
   clear() {
-    this.username = ''
     this.email = ''
     this.firstPassword = ''
     this.secondPassword = ''
-    this.card = ''
   }
 
-  @Output() hidePageEvent = new EventEmitter<any>()
-  hideRegPage() {
-    this.hidePageEvent.emit()
+  @Output() hideLogPageEvent = new EventEmitter<any>()
+  hideLogPage() {
+    this.hideLogPageEvent.emit()
   }
 
   setUser() {
-    this.regService.setLoginUser(this.new_user)
+    this.regService.setLoginUser(this.currentUser)
   }
 
-  createUser() {
+  loginUser() {
     let add = true
     let passwordPass = true
     let emailPass = false
 
-    const usernameObject = document.getElementById('username')!
     const emailObject = document.getElementById('email')!
     const fpObject = document.getElementById('firstPassword')!
     const spObject = document.getElementById('secondPassword')!
-    const cardNumberObject = document.getElementById('card')!
-
-    if (this.username == '') {
-      usernameObject.style.borderColor = 'red'
-      add = false
-    }
 
     if (this.email == '') {
       emailObject.style.borderColor = 'red'
@@ -82,6 +68,9 @@ export class RegistrationComponent implements OnInit {
         if (this.email[i] == '@') {
           emailPass = true
         }
+      }
+      if (emailPass == false) {
+        emailObject.style.borderColor = 'red'
       }
     }
 
@@ -93,11 +82,6 @@ export class RegistrationComponent implements OnInit {
       fpObject.classList.add('ng-invalid')
       spObject.classList.add('ng-invalid')
       passwordPass = false
-    }
-
-    if (this.card == '') {
-      cardNumberObject.classList.add('ng-invalid')
-      add = false
     }
 
     if (add == false) {
@@ -125,26 +109,55 @@ export class RegistrationComponent implements OnInit {
       this.firstPassword = ''
       this.secondPassword = ''
     } else {
-      this.messageService.add({
-        severity: 'success',
-        summary: 'Success',
-        detail: 'Thank you for registration'
-      })
+      let onLog = false
+      for (let i = 0; i < this.users.length; i++) {
+        if (
+          this.users[i].email == this.email &&
+          this.users[i].password == this.firstPassword
+        ) {
+          onLog = true
+          this.currentUser.username = this.users[i].username
+          this.currentUser.email = this.users[i].email
+          this.currentUser.password = this.users[i].password
+          this.currentUser.card = this.users[i].card
+          this.currentUser.logo = this.users[i].logo
+          this.currentUser.status = 'login'
+          this.currentUser.balance = this.users[i].balance
+        }
+      }
 
-      this.new_user.id = this.users[this.users.length - 1].id + 1
-      this.new_user.username = this.username
-      this.new_user.email = this.email
-      this.new_user.password = this.firstPassword
-      this.new_user.card = this.card
-      this.new_user.logo =
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/2048px-Volkswagen_logo_2019.svg.png'
-      this.new_user.status = 'login'
-      this.new_user.balance = 0
+      if (onLog == true) {
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Success',
+          detail: 'Thank you for registration'
+        })
 
-      this.onAdd()
-      this.setUser()
-      setTimeout(() => this.hideRegPage(), 1000)
-      setTimeout(() => this.clear(), 1000)
+        this.setUser()
+        setTimeout(() => this.hideLogPage(), 1000)
+        setTimeout(() => this.clear(), 1000)
+      } else {
+        this.messageService.add({
+          severity: 'error',
+          summary: 'Error',
+          detail: 'This user is not exist'
+        })
+        this.firstPassword = ''
+        this.secondPassword = ''
+      }
     }
   }
+
+  // photo!: string
+  // onFileSelected(event: any) {
+  //   const file: File = event.target.files[0]
+  //   const reader = new FileReader()
+  //   reader.onload = (e: any) => {
+  //     const url = e.target.result
+  //     localStorage.setItem('profileImage', url)
+  //   }
+  //   reader.readAsDataURL(file)
+  //   console.log(file, reader, localStorage['profileImage'])
+  //   this.photo = localStorage['profileImage']
+  // }
 }

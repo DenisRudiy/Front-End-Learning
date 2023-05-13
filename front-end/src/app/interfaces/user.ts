@@ -5,4 +5,6 @@ export class User {
   password!: string
   card!: string
   logo!: string
+  status!: string
+  balance!: number
 }
