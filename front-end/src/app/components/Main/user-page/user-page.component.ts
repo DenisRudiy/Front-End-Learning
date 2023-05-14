@@ -38,8 +38,14 @@ export class UserPageComponent implements OnInit {
     this.showLogPageEvent.emit()
   }
 
+  @Output() showEditPageEvent = new EventEmitter<any>()
+  showEditPage() {
+    this.showEditPageEvent.emit()
+  }
+
   onQuit() {
     this.loginUser = new User()
     localStorage.setItem('loginUser', JSON.stringify(this.loginUser))
+    location.reload()
   }
 }

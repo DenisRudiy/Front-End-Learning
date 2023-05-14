@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { Observable, Subject } from 'rxjs'
 import { User } from '../interfaces/user'
@@ -7,7 +7,7 @@ import { User } from '../interfaces/user'
   providedIn: 'root'
 })
 export class RegServiceService {
-  url = 'http://localhost:3000/users/'
+  url = 'http://localhost:3000/users'
   private loginUser = new Subject<User>()
 
   constructor(private http: HttpClient) {}
@@ -20,12 +20,13 @@ export class RegServiceService {
     return this.http.post<User>(this.url, user)
   }
 
-  updateUser(guitar: User): Observable<Object> {
-    return this.http.put(`${this.url}/${guitar.id}`, guitar)
-  }
-
-  deleteUser(guitar: User): Observable<User[]> {
-    return this.http.delete<User[]>(this.url + guitar.id)
+  updateUser(user: User): Observable<any> {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    }
+    return this.http.put<User>(`${this.url}/${user.id}`, user, httpOptions)
   }
 
   setLoginUser(data: User) {

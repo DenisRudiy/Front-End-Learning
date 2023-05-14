@@ -41,7 +41,7 @@
   <app-cart (changeVisible)="changeVisible()"></app-cart>
 </p-sidebar>
 <p-dialog
-  header="User"
+  header="Profile"
   [(visible)]="dialogVisible"
   [position]="'TopRight'"
   class="userModal"
@@ -52,6 +52,7 @@
   <app-user-page
     (showPageEvent)="showReg()"
     (showLogPageEvent)="showLog()"
+    (showEditPageEvent)="showEdit()"
   ></app-user-page>
 </p-dialog>
 
@@ -64,5 +65,5 @@
 </p-sidebar>
 
 <p-sidebar [(visible)]="editVisible" [fullScreen]="true">
-  <app-login (hideLogPageEvent)="showLog()"></app-login>
+  <app-edit></app-edit>
 </p-sidebar>

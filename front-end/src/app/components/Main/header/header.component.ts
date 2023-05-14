@@ -23,4 +23,8 @@ export class HeaderComponent {
   showLog() {
     this.logVisible = !this.logVisible
   }
+
+  showEdit() {
+    this.editVisible = !this.editVisible
+  }
 }

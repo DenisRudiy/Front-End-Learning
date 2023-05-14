@@ -116,6 +116,7 @@ export class LoginComponent {
           this.users[i].password == this.firstPassword
         ) {
           onLog = true
+          this.currentUser.id = this.users[i].id
           this.currentUser.username = this.users[i].username
           this.currentUser.email = this.users[i].email
           this.currentUser.password = this.users[i].password
@@ -147,17 +148,4 @@ export class LoginComponent {
       }
     }
   }
-
-  // photo!: string
-  // onFileSelected(event: any) {
-  //   const file: File = event.target.files[0]
-  //   const reader = new FileReader()
-  //   reader.onload = (e: any) => {
-  //     const url = e.target.result
-  //     localStorage.setItem('profileImage', url)
-  //   }
-  //   reader.readAsDataURL(file)
-  //   console.log(file, reader, localStorage['profileImage'])
-  //   this.photo = localStorage['profileImage']
-  // }
 }

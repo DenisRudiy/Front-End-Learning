@@ -23,6 +23,8 @@ import { ItemDetailComponent } from './components/Main/menu-page/shop/item-detai
 import { CartComponent } from './components/Main/cart/cart.component'
 import { UserPageComponent } from './components/Main/user-page/user-page.component'
 import { RegistrationComponent } from './components/Main/user-page/registration/registration.component'
+import { LoginComponent } from './components/Main/user-page/login/login.component'
+import { EditComponent } from './components/Main/user-page/edit/edit.component'
 
 //  PrimeNG Imports
 import { AvatarModule } from 'primeng/avatar'
@@ -32,8 +34,8 @@ import { SidebarModule } from 'primeng/sidebar'
 import { ToastModule } from 'primeng/toast'
 import { StyleClassModule } from 'primeng/styleclass'
 import { InputMaskModule } from 'primeng/inputmask'
-import { PasswordModule } from 'primeng/password';
-import { LoginComponent } from './components/Main/user-page/login/login.component'
+import { PasswordModule } from 'primeng/password'
+import { FileUploadModule } from 'primeng/fileupload'
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { LoginComponent } from './components/Main/user-page/login/login.componen
     CartComponent,
     UserPageComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { LoginComponent } from './components/Main/user-page/login/login.componen
     ToastModule,
     StyleClassModule,
     InputMaskModule,
-    PasswordModule
+    PasswordModule,
+    FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

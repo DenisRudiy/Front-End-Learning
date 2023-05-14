@@ -32,7 +32,9 @@
       <h1>{{ loginUser.username }}</h1>
       <h2>${{ loginUser.balance }}</h2>
       <div class="login_edit">
-        <button class="edit_button">Edit Profile</button>
+        <button class="edit_button" (click)="showEditPage()">
+          Edit Profile
+        </button>
         or
         <hr />
         <button class="edit_button" (click)="onQuit()">Quit</button>
