@@ -1,9 +1,11 @@
-import { Component, EventEmitter, Output } from '@angular/core'
+import { Component, EventEmitter, OnInit, Output } from '@angular/core'
 import { Food } from 'src/app/interfaces/food'
 import { FoodService } from 'src/app/services/food.service'
 import { PaginationService } from 'ngx-pagination'
 import { Subscription } from 'rxjs'
 import { MessageService } from 'primeng/api'
+import { User } from 'src/app/interfaces/user'
+import { RegServiceService } from 'src/app/services/reg-service.service'
 
 @Component({
   selector: 'app-cart',
@@ -11,7 +13,7 @@ import { MessageService } from 'primeng/api'
   styleUrls: ['./cart.component.scss'],
   providers: [PaginationService, MessageService]
 })
-export class CartComponent {
+export class CartComponent implements OnInit {
   clickEventSubscription!: Subscription
   page = 1
   cartFood: Food[] = []
@@ -19,10 +21,12 @@ export class CartComponent {
   showCart: boolean = false
   sidebar!: boolean
   hidePaginate: boolean = true
+  loginUser: User = new User()
 
   constructor(
     private service: FoodService,
-    private messageService: MessageService
+    private messageService: MessageService,
+    private regService: RegServiceService
   ) {
     this.clickEventSubscription = this.service
       .getToCart()
@@ -47,6 +51,19 @@ export class CartComponent {
         }
         this.showCart = true
       })
+    this.clickEventSubscription = this.regService
+      .getLoginUser()
+      .subscribe((data: User) => {
+        localStorage.setItem('loginUser', JSON.stringify(data))
+        this.loginUser = data
+      })
+  }
+
+  ngOnInit(): void {
+    const storedLoginUser = localStorage.getItem('loginUser')
+    if (storedLoginUser) {
+      this.loginUser = JSON.parse(storedLoginUser)
+    }
   }
 
   onDelete(item: Food) {
@@ -84,14 +101,40 @@ export class CartComponent {
     this.changeVisible.emit(this.sidebar)
   }
 
+  onUpdate() {
+    this.regService.updateUser(this.loginUser).subscribe((data) => {})
+  }
+  setUser() {
+    this.regService.setLoginUser(this.loginUser)
+  }
+
   onBuy() {
-    this.totalPrice = 0
-    this.cartFood.splice(0)
-    this.showCart = false
-    this.messageService.add({
-      severity: 'success',
-      summary: 'Success',
-      detail: 'Thank you for order)'
-    })
+    if (this.loginUser.status == 'login') {
+      if (this.loginUser.balance - this.totalPrice < 0) {
+        this.messageService.add({
+          severity: 'error',
+          summary: 'Error',
+          detail: 'You have not enough money('
+        })
+      } else {
+        this.loginUser.balance -= this.totalPrice
+        this.totalPrice = 0
+        this.onUpdate()
+        this.setUser()
+        this.cartFood.splice(0)
+        this.showCart = false
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Success',
+          detail: 'Thank you for order)'
+        })
+      }
+    } else {
+      this.messageService.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: 'You may login your account to make purchase!'
+      })
+    }
   }
 }

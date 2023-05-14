@@ -11,12 +11,29 @@ import { RegServiceService } from 'src/app/services/reg-service.service'
 export class UserPageComponent implements OnInit {
   clickEventSubscription!: Subscription
   loginUser: User = new User()
+  darkTheme: boolean = false
 
   ngOnInit(): void {
     const storedLoginUser = localStorage.getItem('loginUser')
     if (storedLoginUser) {
       this.loginUser = JSON.parse(storedLoginUser)
     }
+
+    const storedTheme = localStorage.getItem('theme')
+
+    if (storedTheme) {
+      this.darkTheme = storedTheme === 'dark'
+    }
+
+    if (this.darkTheme == true) {
+      document.body.classList.toggle('dark-theme')
+    }
+  }
+
+  toggleDarkTheme(): void {
+    this.darkTheme = !this.darkTheme
+    document.body.classList.toggle('dark-theme')
+    localStorage.setItem('theme', this.darkTheme ? 'dark' : 'light')
   }
 
   constructor(private regService: RegServiceService) {

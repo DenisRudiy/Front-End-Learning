@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   .log_body {
-    background-color: white;
+    background-color: var(--bkg-secondary-color);
+    color: var(--text-color);
     width: 400px;
     height: 500px;
     border-radius: 10px;
@@ -89,6 +90,7 @@
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
     width: 250px !important;
+    color: #3d2514;
   }
   .p-inputtext:enabled:hover {
     border-color: #947f12;

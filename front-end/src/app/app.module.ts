@@ -18,7 +18,6 @@ import { ShopComponent } from './components/Main/menu-page/shop/shop.component'
 import { MainComponent } from './components/Main/main/main.component'
 import { ProdListComponent } from './components/Main/home-page/prod-list/prod-list.component'
 import { MenuListComponent } from './components/Main/home-page/menu-list/menu-list.component'
-import { FillerComponent } from './components/filler/filler.component'
 import { ItemDetailComponent } from './components/Main/menu-page/shop/item-detail/item-detail.component'
 import { CartComponent } from './components/Main/cart/cart.component'
 import { UserPageComponent } from './components/Main/user-page/user-page.component'
@@ -49,7 +48,6 @@ import { FileUploadModule } from 'primeng/fileupload'
     HomePageComponent,
     MenuPageComponent,
     ShopComponent,
-    FillerComponent,
     ItemDetailComponent,
     CartComponent,
     UserPageComponent,

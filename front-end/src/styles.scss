@@ -1,7 +1,6 @@
 @import 'primeng/resources/themes/saga-orange/theme.css';
 @import 'primeng/resources/primeng.css';
 @import 'primeicons/primeicons.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,13 +10,27 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
 }
 body {
+  --edit-secondary-color: rgb(242, 240, 234);
+  --bkg-color: rgb(246, 242, 226);
+  --text-color: #3d2514;
+  --bkg-secondary-color: white;
+}
+body.dark-theme {
+  --edit-secondary-color: #282828;
+  --bkg-color: #121212;
+  --text-color: rgb(246, 242, 226);
+  --bkg-secondary-color: #1e1e1e;
+}
+
+body {
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  color: #3d2514;
-  background-color: rgb(246, 242, 226);
+  color: var(--text-color);
+  background-color: var(--bkg-color);
 }
-body::-webkit-scrollbar {
+
+::-webkit-scrollbar {
   display: none;
 }
 

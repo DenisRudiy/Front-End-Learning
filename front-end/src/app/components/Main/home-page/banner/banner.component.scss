@@ -1,4 +1,5 @@
 @import '../../../../../mixin.scss';
+@import '../../../../../styles.scss';
 
 .bun_body {
   .bun_slide {
@@ -9,7 +10,7 @@
     @apply flex;
     padding: 20px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--bkg-secondary-color);
     animation: 1s show ease;
     .bun_text {
       margin-left: 3vw;

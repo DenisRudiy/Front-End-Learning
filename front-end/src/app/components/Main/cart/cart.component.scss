@@ -2,18 +2,19 @@
   text-align: center;
   padding-bottom: 50px;
   h1 {
+    color: var(--text-color);
     @apply text-3xl;
   }
 }
 
 .cart_body {
   height: 612px;
+  color: var(--text-color);
   .cart_element {
     .cart_item {
       @apply flex justify-between;
 
       img {
-        mix-blend-mode: multiply !important;
         height: 100px;
         max-width: 228px;
         padding: 2px;
@@ -87,7 +88,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bkg-secondary-color);
   margin-left: 55px;
   margin-top: 30px;
 
@@ -97,6 +98,7 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
   .total_content {
+    color: var(--text-color);
     display: flex;
     gap: 5px;
     h1 {
@@ -126,7 +128,8 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--bkg-secondary-color);
+  color: var(--text-color);
   margin-top: 200px;
   margin-left: 55px;
 

@@ -1,4 +1,6 @@
 @import '../../../../../mixin.scss';
+@import '../../../../../styles.scss';
+
 * {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -12,6 +14,7 @@
     background-color: #ffc045;
     box-shadow: #a98c76 3px 3px;
     padding: 7px 7px 7px 7px;
+    color: #3d2514 !important;
     h2 {
       @apply uppercase;
       font-size: 25px;
@@ -44,6 +47,7 @@
       border-radius: 10px;
       transition: all 0.15s;
       margin: 5px;
+      color: #3d2514 !important;
     }
     button:hover {
       background-color: #d89a1e;
@@ -87,14 +91,13 @@
       border-radius: 10px;
       margin: calc(5px + 0.5vw);
       animation: 1s show ease;
-      background-color: white;
+      background: var(--bkg-secondary-color);
       .item_detail {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 10px;
         img {
-          mix-blend-mode: multiply !important;
           width: auto;
           height: calc(50px + 8vw);
           transition: all 0.5s;
@@ -145,6 +148,19 @@
 }
 
 ::ng-deep {
+  .p-dialog-mask {
+    .p-dialog {
+      .p-dialog-header {
+        background: var(--bkg-secondary-color);
+        color: var(--text-color);
+      }
+      .p-dialog-content {
+        background: var(--bkg-secondary-color);
+        color: var(--text-color);
+      }
+    }
+  }
+
   .ngx-pagination {
     display: flex;
     justify-content: center;

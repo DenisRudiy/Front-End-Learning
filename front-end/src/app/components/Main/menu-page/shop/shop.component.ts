@@ -16,6 +16,7 @@ export class ShopComponent implements OnInit {
   currentItem!: Food
   filteredFood!: Food[]
   show: boolean = false
+  isDarkMode = false
 
   constructor(private service: FoodService) {}
 

@@ -1,7 +1,9 @@
+@import '../../../../styles.scss';
 .header {
   @apply pl-10 pr-10  fixed z-10;
   background-image: url('https://poetic-pothos-84995b.netlify.app/assets/img/banner/bg.png');
   width: 100%;
+  color: #3d2514 !important;
   .logo_part {
     @apply flex justify-between;
     width: 210px;
@@ -35,7 +37,7 @@
     width: 450px !important;
   }
   .p-sidebar {
-    background: rgb(246, 242, 226);
+    background: var(--bkg-color);
   }
   .p-sidebar-content {
     overflow-y: scroll !important;
@@ -61,10 +63,12 @@
         margin-top: 130px !important;
         margin-right: 10px !important;
         .p-dialog-header {
-          background: rgb(246, 242, 226);
+          background: var(--bkg-secondary-color);
+          color: var(--text-color);
         }
         .p-dialog-content {
-          background: rgb(246, 242, 226);
+          background: var(--bkg-secondary-color);
+          color: var(--text-color);
         }
       }
     }

@@ -7,6 +7,7 @@
   background-position: center center;
   background-size: cover;
   padding-top: 121px;
+  color: #3d2514 !important;
   .blocks {
     @include for-size(before-main) {
       @apply flex justify-between;

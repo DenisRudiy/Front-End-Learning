@@ -137,7 +137,7 @@ export class RegistrationComponent implements OnInit {
       this.new_user.password = this.firstPassword
       this.new_user.card = this.card
       this.new_user.logo =
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/2048px-Volkswagen_logo_2019.svg.png'
+        'https://img.icons8.com/material/96/A6A6A6/user-male-circle--v1.png'
       this.new_user.status = 'login'
       this.new_user.balance = 0
 
