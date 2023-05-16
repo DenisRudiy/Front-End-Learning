@@ -1,7 +1,7 @@
-<h1 align="center">VueSolitaire</h1>
+<h1 align="center">Burger Shop</h1>
 <h2 align="center">
 
-[![Mentioned in Awesome Vue.js](https://awesome.re/mentioned-badge.svg)](https://github.com/vuejs/awesome-vue)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="angular-logo" width="120px" height="120px"/>
 
 </h2>
 
