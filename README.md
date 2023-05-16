@@ -30,15 +30,19 @@
 
 This site allows you to make remote orders from the cafe. In the picture you can see an example of how the cafe menu is displayed, in addition to the image as you can see the price as well as a button with which you can add items to the cart.
 
+<p align="center">
 <img src="readme_assets/button_gifed.gif" width="50%"></p>
 
-## How to play
+## How to buy
 
-### Drag and Drop [__Chrome,Opera__]:-
+### Add to Card and make purchase:-
 
-- **Drag** the card or the card pile you want to move.
-- **Drop** the dragged card pile on the target and if the move is legal card will move
-- Note:- Drag and Drop doesn't work for properly for **firefox** due to their lack of support to html Drag and drop API - https://bugzilla.mozilla.org/show_bug.cgi?id=505521 .
+- **Click** on the Add button.
+- **Click** on the cart icon on header to open list of added items 
+- Note:- To make purchase you need to be authorized on this web site.
+
+<p align="center">
+<img src="readme_assets/cart_page.png" width="80%"></p>
 
 ### Click edition [__Mobile,Firefox,Chrome,Safari,Opera__]-
 
