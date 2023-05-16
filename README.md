@@ -72,7 +72,7 @@ This site allows you to make remote orders from the cafe. In the picture you can
 - On the user card you can find all buttons that you need. **Click** on the theme change button to change light or dark theme.
 
 <p align="center">
-<img src="readme_assets/light_black_theme.png" width="80%"></p>
+<img src="readme_assets/ligt_black_theme.png" width="80%"></p>
 
 ### Change language
 - **Click** on the user icon on header.
