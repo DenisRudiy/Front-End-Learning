@@ -30,6 +30,8 @@
 
 This site allows you to make remote orders from the cafe. In the picture you can see an example of how the cafe menu is displayed, in addition to the image as you can see the price as well as a button with which you can add items to the cart.
 
+<img src="readme_assets/button_gifed.gif" width="50%"></p>
+
 ## How to play
 
 ### Drag and Drop [__Chrome,Opera__]:-
