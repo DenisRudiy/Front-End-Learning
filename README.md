@@ -53,31 +53,33 @@ This site allows you to make remote orders from the cafe. In the picture you can
 - 
 ### Login
 - On the login title you need to complete all field and click on the login button.
-- Incribed data will compare with data already recorded in the db.json file, and if our data will be similary to current user, you will login th web site.
+- Incribed data will compare with data already recorded in the db.json file, and if our data will be similary to current user, you will login the web site.
 
 <p align="center">
 <img src="readme_assets/log_reg_page.png" width="80%"></p>
 
-# Variants
+# Edit logined user
 
-## **Klondike**
-
-<p align="center">
-<img  src="./readme_assets/3.png" width="80%">
-</p>
-<!-- <img src="./readme_assets/3.png" width="50%"> -->
-
-## **Spider 4 Suit**
+### Edit
+- On the edit title you need to change values in the right places for you field and click on the save button.
+- Incribed data will changed and put in the db.json file.
 
 <p align="center">
-<img  src="./readme_assets/5.png" width="80%">
-</p>
+<img src="readme_assets/edit_page.png" width="80%"></p>
 
-## **Spider 1 Suit**
+### Change theme
+- **Click** on the user icon on header.
+- On the user card you can find all buttons that you need. **Click** on the theme change button to change light or dark theme.
 
 <p align="center">
-<img  src="./readme_assets/1.png" width="80%">
-</p>
+<img src="readme_assets/light_black_theme.png" width="80%"></p>
+
+### Change language
+- **Click** on the user icon on header.
+- **Click** on the language change button to change English or Ukrainian language.
+
+<p align="center">
+<img src="readme_assets/language_differense.png" width="80%"></p>
 
 ## Project setup
 
@@ -86,12 +88,8 @@ npm install
 npm run serve
 ```
 
-## Future scope
+On another Terminal call: 
 
-- Add winning animation.
-
-## Support on Beerpay
-
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/silent-lad/VueSolitaire/badge.svg?style=beer-square)](https://beerpay.io/silent-lad/VueSolitaire) [![Beerpay](https://beerpay.io/silent-lad/VueSolitaire/make-wish.svg?style=flat-square)](https://beerpay.io/silent-lad/VueSolitaire?focus=wish)
+```
+json-server --watch db.json
+```
