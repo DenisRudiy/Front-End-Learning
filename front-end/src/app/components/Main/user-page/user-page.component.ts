@@ -12,22 +12,35 @@ export class UserPageComponent implements OnInit {
   clickEventSubscription!: Subscription
   loginUser: User = new User()
   darkTheme: boolean = false
+  pageUkr: boolean = false
+  lang: string = 'eng'
 
   ngOnInit(): void {
     const storedLoginUser = localStorage.getItem('loginUser')
+    const storedTheme = localStorage.getItem('theme')
+    const storedLang = localStorage.getItem('language')!
+
     if (storedLoginUser) {
       this.loginUser = JSON.parse(storedLoginUser)
     }
-
-    const storedTheme = localStorage.getItem('theme')
-
     if (storedTheme) {
       this.darkTheme = storedTheme === 'dark'
     }
-
     if (this.darkTheme == true) {
       document.body.classList.toggle('dark-theme')
     }
+    if (storedLang) {
+      this.pageUkr = storedLang === 'ukr'
+    }
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
+    }
+  }
+
+  togglePageLang(): void {
+    this.pageUkr = !this.pageUkr
+    localStorage.setItem('language', this.pageUkr ? 'ukr' : 'eng')
+    location.reload()
   }
 
   toggleDarkTheme(): void {

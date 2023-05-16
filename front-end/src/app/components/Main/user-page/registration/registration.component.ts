@@ -17,6 +17,7 @@ export class RegistrationComponent implements OnInit {
   firstPassword: string = ''
   secondPassword: string = ''
   card: string = ''
+  lang: string = 'eng'
 
   constructor(
     private messageService: MessageService,
@@ -27,6 +28,10 @@ export class RegistrationComponent implements OnInit {
     this.regService.getUser().subscribe((data) => {
       this.users = data
     })
+    const storedLang = localStorage.getItem('language')
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
+    }
   }
 
   onAdd() {

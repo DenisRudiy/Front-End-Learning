@@ -1,6 +1,6 @@
 <div class="bun_body">
   <div class="bun_slide">
-    <div class="bun_text">
+    <div class="bun_text" *ngIf="lang == 'eng'; else Ukrainian">
       <h3>Always Tasty Burgers</h3>
       <h1>Choose & Enjoy</h1>
       <p>
@@ -10,6 +10,18 @@
         recipes drawn from all over the world.
       </p>
     </div>
+    <ng-template #Ukrainian
+      ><div class="bun_text">
+        <h3>Завжди Смачно</h3>
+        <h1>Обирай & Смакуй</h1>
+        <p>
+          У нашому закладі ви можете насолодитися чудовими бургерами, сендвічами
+          та паніні у закладі! До них завжди можна замовити хрустку картоплю фрі
+          та газовану воду. Тільки в нашому кафе ви можете спробувати безліч
+          різних бургерів, рецепти яких зібрані з усього світу.
+        </p>
+      </div></ng-template
+    >
     <div class="bun_image">
       <img
         src="https://poetic-pothos-84995b.netlify.app/assets/img/events/event_1.jpg"

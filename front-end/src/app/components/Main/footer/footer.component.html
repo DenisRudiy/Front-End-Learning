@@ -7,12 +7,21 @@
       />
       <h1 class="title">Burger Hub</h1>
     </div>
-    <div class="footer_info">
+    <div class="footer_info" *ngIf="lang == 'eng'; else Ukrainian">
       <p>
         Come to the venue yourself or with your family, we will give you
         unforgettable emotions and help you find happiness
       </p>
       <p class="pt-2">© Burger Hub 2023. All rights reserved.</p>
     </div>
+    <ng-template #Ukrainian>
+      <div class="footer_info">
+        <p>
+          Приходьте до нас самі або з сім'єю, ми подаруємо вам незабутні емоції
+          та допоможемо знайти щастя
+        </p>
+        <p class="pt-2">© Burger Hub 2023. Всі права захищені.</p>
+      </div>
+    </ng-template>
   </div>
 </div>

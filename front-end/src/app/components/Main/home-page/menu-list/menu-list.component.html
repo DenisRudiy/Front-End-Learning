@@ -1,5 +1,8 @@
 <div class="menu_box">
-  <div class="grid grid-cols-2 gap-0 place-items-center h-86 ...">
+  <div
+    class="grid grid-cols-2 gap-0 place-items-center h-86 ..."
+    *ngIf="lang == 'eng'; else Ukrainian"
+  >
     <div class="big_photo">
       <img
         src="https://poetic-pothos-84995b.netlify.app/assets/img/banner-grid/b1.png"
@@ -30,4 +33,37 @@
       </div>
     </div>
   </div>
+  <ng-template #Ukrainian>
+    <div class="grid grid-cols-2 gap-0 place-items-center h-86 ...">
+      <div class="big_photo">
+        <img
+          src="https://poetic-pothos-84995b.netlify.app/assets/img/banner-grid/b1.png"
+          alt=""
+          class="photo"
+        />
+        <h1>Спробуй Сьогодні</h1>
+        <h2>Рояль Бургер</h2>
+      </div>
+      <div class="couple">
+        <div class="small_photo">
+          <img
+            src="https://poetic-pothos-84995b.netlify.app/assets/img/banner-grid/s1.png"
+            alt=""
+            class="photo"
+          />
+          <h1>Спробуй Сьогодні</h1>
+          <h2>Легкий Бургер</h2>
+        </div>
+        <div class="small_photo">
+          <img
+            src="https://poetic-pothos-84995b.netlify.app/assets/img/banner-grid/s2.png"
+            alt=""
+            class="photo"
+          />
+          <h1>Спробуй Сьогодні</h1>
+          <h2>М'ясний Бургер</h2>
+        </div>
+      </div>
+    </div>
+  </ng-template>
 </div>

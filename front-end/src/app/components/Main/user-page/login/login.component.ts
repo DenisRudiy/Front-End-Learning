@@ -16,6 +16,7 @@ export class LoginComponent {
   email: string = ''
   firstPassword: string = ''
   secondPassword: string = ''
+  lang: string = 'eng'
 
   constructor(
     private messageService: MessageService,
@@ -26,6 +27,10 @@ export class LoginComponent {
     this.regService.getUser().subscribe((data) => {
       this.users = data
     })
+    const storedLang = localStorage.getItem('language')
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
+    }
   }
 
   changeColor(id: string) {

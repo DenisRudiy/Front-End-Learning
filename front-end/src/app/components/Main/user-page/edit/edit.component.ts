@@ -18,6 +18,7 @@ export class EditComponent implements OnInit {
   secondPassword: string = ''
   photo!: string
   photoPass: boolean = false
+  lang: string = 'eng'
 
   constructor(
     private regService: RegServiceService,
@@ -44,6 +45,10 @@ export class EditComponent implements OnInit {
     this.regService.getUser().subscribe((data) => {
       this.users = data
     })
+    const storedLang = localStorage.getItem('language')
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
+    }
   }
 
   onUpdate() {

@@ -6,27 +6,60 @@
       alt=""
     />
   </button>
-  <button class="func">
+  <button
+    class="func"
+    (click)="togglePageLang()"
+    *ngIf="lang == 'eng'; else UkrainianLang"
+  >
     <img
-      src="https://cdn-icons-png.flaticon.com/512/197/197572.png"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Square_Flag_of_the_United_Kingdom.svg/2048px-Square_Flag_of_the_United_Kingdom.svg.png"
       alt=""
       class="func_image"
     />
   </button>
+
+  <ng-template #UkrainianLang>
+    <button class="func" (click)="togglePageLang()">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/197/197572.png"
+        alt=""
+        class="func_image"
+      />
+    </button>
+  </ng-template>
 </div>
 <div class="user_body">
-  <div class="non_register" *ngIf="loginUser.status != 'login'; else loginPage">
-    <div class="user_logo">
-      <img
-        src="https://img.icons8.com/material/96/A6A6A6/user-male-circle--v1.png"
-        alt=""
-      />
+  <div *ngIf="loginUser.status != 'login'; else loginPage">
+    <div class="non_register" *ngIf="lang == 'eng'; else Ukrainian">
+      <div class="user_logo">
+        <img
+          src="https://img.icons8.com/material/96/A6A6A6/user-male-circle--v1.png"
+          alt=""
+        />
+      </div>
+      <div class="user_info">If you don't have an account</div>
+
+      <button class="login" (click)="showRegPage()">Create Account</button>
+      or
+      <hr />
+      <button class="login" (click)="showLogPage()">Login Account</button>
     </div>
-    <div class="user_info">If you don't have an account</div>
-    <button class="login" (click)="showRegPage()">Create Account</button>
-    or
-    <hr />
-    <button class="login" (click)="showLogPage()">Login Account</button>
+    <ng-template #Ukrainian>
+      <div class="non_register">
+        <div class="user_logo">
+          <img
+            src="https://img.icons8.com/material/96/A6A6A6/user-male-circle--v1.png"
+            alt=""
+          />
+        </div>
+        <div class="user_info">Якщо у вас немає акаунту</div>
+
+        <button class="login" (click)="showRegPage()">Зареєструватися</button>
+        або
+        <hr />
+        <button class="login" (click)="showLogPage()">Увійти</button>
+      </div>
+    </ng-template>
   </div>
 
   <ng-template #loginPage>
@@ -36,7 +69,7 @@
     <div class="login_body">
       <h1>{{ loginUser.username }}</h1>
       <h2>${{ loginUser.balance }}</h2>
-      <div class="login_edit">
+      <div class="login_edit" *ngIf="lang == 'eng'; else UkrainianLogin">
         <button class="edit_button" (click)="showEditPage()">
           Edit Profile
         </button>
@@ -44,6 +77,16 @@
         <hr />
         <button class="edit_button" (click)="onQuit()">Quit</button>
       </div>
+      <ng-template #UkrainianLogin>
+        <div class="login_edit">
+          <button class="edit_button" (click)="showEditPage()">
+            Редагувати
+          </button>
+          або
+          <hr />
+          <button class="edit_button" (click)="onQuit()">Вийти</button>
+        </div>
+      </ng-template>
     </div>
   </ng-template>
 </div>

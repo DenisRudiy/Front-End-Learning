@@ -1,6 +1,6 @@
 <p-toast></p-toast>
 <div class="log_item">
-  <div class="log_body">
+  <div class="log_body" *ngIf="lang == 'eng'; else Ukrainian">
     <div class="log_title">
       <h1>Sign Up</h1>
     </div>
@@ -56,4 +56,63 @@
       <button class="login" (click)="loginUser()">Login</button>
     </div>
   </div>
+
+  <ng-template #Ukrainian>
+    <div class="log_body">
+      <div class="log_title">
+        <h1>Увійти</h1>
+      </div>
+      <div class="log_form">
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-at"></i>
+          </span>
+          <input
+            [(ngModel)]="email"
+            pInputText
+            placeholder="Email"
+            class="log_input"
+            id="email"
+            maxlength="30"
+            (click)="changeColor('email')"
+          />
+        </div>
+
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-lock"></i>
+          </span>
+          <p-password
+            id="firstPassword"
+            [(ngModel)]="firstPassword"
+            [toggleMask]="true"
+            placeholder="Пароль"
+            [feedback]="false"
+            maxlength="20"
+            class="ng-dirty"
+            (click)="changeColor('firstPassword')"
+          ></p-password>
+        </div>
+
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-lock"></i>
+          </span>
+          <p-password
+            id="secondPassword"
+            [(ngModel)]="secondPassword"
+            [toggleMask]="true"
+            placeholder="Пароль"
+            [feedback]="false"
+            maxlength="20"
+            class="ng-dirty"
+            (click)="changeColor('secondPassword')"
+          ></p-password>
+        </div>
+      </div>
+      <div class="log_button">
+        <button class="login" (click)="loginUser()">Увійти</button>
+      </div>
+    </div>
+  </ng-template>
 </div>

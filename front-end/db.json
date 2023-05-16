@@ -3,296 +3,266 @@
     {
       "id": 1,
       "name": "Cheeseburger",
+      "ukrName": "Чізбургер",
       "img": "https://i.postimg.cc/xT7ffPq5/burger-1.png",
       "type": "burger",
       "calories": "642.5",
       "price": 20,
       "composition": "Bun, cheese, cutlet, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        1
-      ]
+      "ukrComposition": "Булочка, сир, котлета, цибуля, солоні огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 2,
       "name": "Double Cheese",
+      "ukrName": "Дабл Чізбургер",
       "img": "https://i.postimg.cc/fWjgCWxh/burger-2.png",
       "type": "burger",
       "calories": "885.8",
       "price": 30,
       "composition": "Bun, cheese, two cutlets, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        2
-      ]
+      "ukrComposition": "Булочка, сир, дві котлети, цибуля, солоні огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 3,
       "name": "Royal Burger",
+      "ukrName": "Рояль Бургер",
       "img": "https://i.postimg.cc/QtgSfSKq/burger-3.png",
       "type": "burger",
       "calories": "939.9",
       "price": 45,
       "composition": "Bun, cheese, beef cutlet, beacon, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        3
-      ]
+      "ukrComposition": "Булка, сир, яловича котлета, бекон, цибуля, мариновані огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 4,
       "name": "Fresh Burger",
+      "ukrName": "Легкий Бурегр",
       "img": "https://i.postimg.cc/sg163pbV/burger-4.png",
       "type": "burger",
       "calories": "539.7",
       "price": 35,
       "composition": "Bun, cheese, chicken cutlet, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        4
-      ]
+      "ukrComposition": "Булочка, сир, куряча котлета, цибуля, солоні огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 5,
       "name": "Mega Cheese",
+      "ukrName": "Мега Сирний",
       "img": "https://i.postimg.cc/rprfrq83/burger-5.png",
       "type": "burger",
       "calories": "729.5",
       "price": 45,
       "composition": "Bun, double cheese, cutlet, beacon, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        5
-      ]
+      "ukrComposition": "Булочка, подвійний сир, котлета, бекон, цибуля, мариновані огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 6,
       "name": "Baby John",
+      "ukrName": "Крихітка Джо",
       "img": "https://i.postimg.cc/rprfrq83/burger-5.png",
       "type": "burger",
       "calories": "899.2",
       "price": 50,
       "composition": "Bun, cheese, big beef cutlet, double beacon, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        6
-      ]
+      "ukrComposition": "Булочка, сир, велика яловича котлета, подвійний бекон, цибуля, солоні огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 7,
       "name": "King",
+      "ukrName": "Король",
       "img": "https://i.postimg.cc/cCsh2YQG/burger-7.png",
       "type": "burger",
       "calories": "1029.2",
       "price": 65,
       "composition": "Bun, double cheese, double big beef cutlet, onions, pickles, ketchup, mustard, salad, tomato",
-      "foods_id": [
-        7
-      ]
+      "ukrComposition": "Булочка, подвійний сир, подвійна велика яловича котлета, цибуля, солоні огірки, кетчуп, гірчиця, салат, помідор"
     },
     {
       "id": 8,
       "name": "Fish Burger",
+      "ukrName": "Рибний Бургер",
       "img": "https://i.postimg.cc/pXscN0GG/burger-8.png",
       "type": "burger",
       "calories": "529.2",
       "price": 30,
       "composition": "Bun, fish cutlet, ketchup, mayonnaise, salad, tomato",
-      "foods_id": [
-        8
-      ]
+      "ukrComposition": "Булка, рибна котлета, кетчуп, майонез, салат, помідор"
     },
     {
       "id": 9,
       "name": "Small Fries",
+      "ukrName": "Маленька Картопля",
       "img": "https://i.postimg.cc/X7j1zM8B/fries-1.png",
       "type": "snacks",
       "calories": "335.7",
       "price": 10,
       "composition": "well-fried fries dipped in salt and spices",
-      "foods_id": [
-        9
-      ]
+      "ukrComposition": "добре просмажена картопля фрі, вмочена в сіль і спеції"
     },
     {
       "id": 10,
       "name": "Big Fries",
+      "ukrName": "Велика Картопля",
       "img": "https://i.postimg.cc/YCVX0vwQ/fries-2.png",
       "type": "snacks",
       "calories": "585.7",
       "price": 20,
       "composition": "well-fried fries dipped in salt and spices",
-      "foods_id": [
-        10
-      ]
+      "ukrComposition": "добре просмажена картопля фрі, вмочена в сіль і спеції"
     },
     {
       "id": 11,
       "name": "Nuggets",
+      "ukrName": "Наггетси",
       "img": "https://i.postimg.cc/6qYcX302/nuggets-1.png",
       "type": "snacks",
       "calories": "435.7",
       "price": 20,
       "composition": "well-fried chicken nuggets dipped in salt and spices",
-      "foods_id": [
-        11
-      ]
+      "ukrComposition": "добре обсмажені курячі нагетси, вмочені в сіль і спеції"
     },
     {
       "id": 12,
       "name": "Big Nuggets",
+      "ukrName": "Великі Наггетси",
       "img": "https://i.postimg.cc/pXcCcmr3/nuggets-2.png",
       "type": "snacks",
       "calories": "825.6",
       "price": 30,
       "composition": "well-fried chicken nuggets dipped in salt and spices",
-      "foods_id": [
-        12
-      ]
+      "ukrComposition": "добре обсмажені курячі нагетси, вмочені в сіль і спеції"
     },
     {
       "id": 13,
       "name": "Ketchup",
+      "ukrName": "Кетчуп",
       "img": "https://i.postimg.cc/Dyw5crvq/sauce-1.png",
       "type": "snacks",
       "calories": "85.3",
       "price": 5,
       "composition": "Ketchup",
-      "foods_id": [
-        13
-      ]
+      "ukrComposition": "Кетчуп"
     },
     {
       "id": 14,
       "name": "Mayonnaise",
+      "ukrName": "Майонез",
       "img": "https://i.postimg.cc/8kHtWKSp/sauce-2.png",
       "type": "snacks",
       "calories": "105.7",
       "price": 5,
       "composition": "Mayonnaise",
-      "foods_id": [
-        14
-      ]
+      "ukrComposition": "Майонез"
     },
     {
       "id": 15,
       "name": "Mustard",
+      "ukrName": "Гірчиця",
       "img": "https://i.postimg.cc/g2wDCG6j/sauce-3.png",
       "type": "snacks",
       "calories": "65.3",
       "price": 5,
       "composition": "Mustard",
-      "foods_id": [
-        15
-      ]
+      "ukrComposition": "Гірчиця"
     },
     {
       "id": 16,
       "name": "Cola",
+      "ukrName": "Cola",
       "img": "https://i.postimg.cc/x1WRYBKR/water-1-benzin-preview.png",
       "type": "soda",
       "calories": "150",
       "price": 8,
       "composition": "Cola",
-      "foods_id": [
-        16
-      ]
+      "ukrComposition": "Cola"
     },
     {
       "id": 17,
       "name": "Fanta",
+      "ukrName": "Fanta",
       "img": "https://i.postimg.cc/mrCSrVjG/water-2-removebg-preview.png",
       "type": "soda",
       "calories": "150",
       "price": 8,
       "composition": "Fanta",
-      "foods_id": [
-        17
-      ]
+      "ukrComposition": "Fanta"
     },
     {
       "id": 18,
       "name": "Pepsi",
+      "ukrName": "Pepsi",
       "img": "https://i.postimg.cc/cHWBtYkt/water-3-removebg-preview.png",
       "type": "soda",
       "calories": "150",
       "price": 8,
       "composition": "Pepsi",
-      "foods_id": [
-        18
-      ]
+      "ukrComposition": "Pepsi"
     },
     {
       "id": 19,
       "name": "Schweppes",
+      "ukrName": "Schweppes",
       "img": "https://i.postimg.cc/Kz5rPzCq/water-4-removebg-preview.png",
       "type": "soda",
       "calories": "120",
       "price": 8,
       "composition": "Schweppes",
-      "foods_id": [
-        19
-      ]
+      "ukrComposition": "Schweppes"
     },
     {
       "id": 20,
       "name": "RedBull",
+      "ukrName": "RedBull",
       "img": "https://i.postimg.cc/8cPdtGS1/water-5-removebg-preview.png",
       "type": "soda",
       "calories": "180",
       "price": 12,
       "composition": "RedBull",
-      "foods_id": [
-        20
-      ]
+      "ukrComposition": "RedBull"
     },
     {
       "id": 21,
       "name": "Water",
+      "ukrName": "Вода",
       "img": "https://i.postimg.cc/rsn1HHV5/water-6-removebg-preview.png",
       "type": "soda",
       "calories": "10",
       "price": 6,
       "composition": "Water",
-      "foods_id": [
-        21
-      ]
+      "ukrComposition": "Вода"
     },
     {
       "id": 22,
       "name": "Combo Menu",
+      "ukrName": "Комбо Меню",
       "img": "https://poetic-pothos-84995b.netlify.app/assets/img/banner-grid/b1.png",
       "type": "menu",
       "calories": "1127",
       "price": 50,
       "composition": "Royal Burger, Small Fries, Cola",
-      "foods_id": [
-        3,
-        9,
-        16
-      ]
+      "ukrComposition": "Королівський бургер, картопля фрі, кола"
     },
     {
       "id": 23,
       "name": "Classic Menu",
+      "ukrName": "Класичне Меню",
       "img": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&w=1000&q=80",
       "type": "menu",
       "calories": "1127",
       "price": 65,
       "composition": "Baby John, Big Fries",
-      "foods_id": [
-        6,
-        10
-      ]
+      "ukrComposition": "Малюк Джо, Велика Картопля"
     },
     {
       "id": 24,
       "name": "King Menu",
+      "ukrName": "Королівське Меню",
       "img": "https://img.lovepik.com/photo/50163/3565.jpg_wh860.jpg",
       "type": "menu",
       "calories": "1827",
       "price": 92,
       "composition": "King, Big Fries, Ketchup, RedBull",
-      "foods_id": [
-        7,
-        10,
-        13,
-        20
-      ]
+      "ukrComposition": "Король, Велика Картопля, Кетчуп, RedBull"
     }
   ],
   "users": [
@@ -308,13 +278,13 @@
     },
     {
       "id": 2,
-      "username": "Denis",
+      "username": "Денис",
       "email": "rudenis2311@gmail.com",
       "password": "123",
       "card": "1234-5112-3566-2322",
       "logo": "data:image/jpeg;base64,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",
       "status": "login",
-      "balance": 950
+      "balance": 721
     },
     {
       "id": 3,

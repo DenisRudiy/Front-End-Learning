@@ -17,6 +17,7 @@ export class ShopComponent implements OnInit {
   filteredFood!: Food[]
   show: boolean = false
   isDarkMode = false
+  lang: string = 'eng'
 
   constructor(private service: FoodService) {}
 
@@ -25,6 +26,10 @@ export class ShopComponent implements OnInit {
       this.food = data
       this.filteredFood = data
     })
+    const storedLang = localStorage.getItem('language')
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
+    }
   }
 
   showDialog() {

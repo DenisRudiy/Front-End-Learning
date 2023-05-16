@@ -1,5 +1,8 @@
 <div class="prod_list">
-  <div class="grid grid-cols-1 gap-4 place-items-center h-56 text-center">
+  <div
+    class="grid grid-cols-1 gap-4 place-items-center h-56 text-center"
+    *ngIf="lang == 'eng'; else Ukrainian"
+  >
     <div class="head_block">
       <h2>Always Tasty Burger</h2>
     </div>
@@ -12,6 +15,21 @@
       <a href="menu"><button class="order">Order Now</button></a>
     </div>
   </div>
+  <ng-template #Ukrainian>
+    <div class="grid grid-cols-1 gap-4 place-items-center h-56 text-center">
+      <div class="head_block">
+        <h2>Завжди смачно</h2>
+      </div>
+      <h1>Обирай & Смакуй</h1>
+      <h5>
+        У нас є вишукані бургери для гурманів, які ви можете спробувати.
+        Мега-сирний, класичний або подвійний чизбургер.
+      </h5>
+      <div class="flex justify-center h-56">
+        <a href="menu"><button class="order">Придбати</button></a>
+      </div>
+    </div>
+  </ng-template>
 </div>
 
 <div class="wrapper-body">

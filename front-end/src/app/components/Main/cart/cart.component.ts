@@ -22,6 +22,7 @@ export class CartComponent implements OnInit {
   sidebar!: boolean
   hidePaginate: boolean = true
   loginUser: User = new User()
+  lang: string = 'eng'
 
   constructor(
     private service: FoodService,
@@ -63,6 +64,10 @@ export class CartComponent implements OnInit {
     const storedLoginUser = localStorage.getItem('loginUser')
     if (storedLoginUser) {
       this.loginUser = JSON.parse(storedLoginUser)
+    }
+    const storedLang = localStorage.getItem('language')
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
     }
   }
 

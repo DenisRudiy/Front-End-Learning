@@ -1,9 +1,15 @@
 <div class="main">
   <div class="blocks">
-    <div class="title">
+    <div class="title" *ngIf="lang == 'eng'; else Ukrainian">
       <h3>It is a good time for the great taste of burgers</h3>
       <h1>Special burger</h1>
     </div>
+    <ng-template #Ukrainian>
+      <div class="title">
+        <h3>Гарний час для чудового смаку бургерів</h3>
+        <h1>Особливі Бургери</h1>
+      </div>
+    </ng-template>
     <div class="photo">
       <img src="../../../../assets/main-photo.png" alt="" />
     </div>

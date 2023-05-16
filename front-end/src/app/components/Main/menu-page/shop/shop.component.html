@@ -1,14 +1,25 @@
 <div class="shop_title">
-  <div class="grid grid-cols-1 gap-4 place-items-center text-center">
+  <div
+    class="grid grid-cols-1 gap-4 place-items-center text-center"
+    *ngIf="lang == 'eng'; else Ukrainian"
+  >
     <div class="shop_block">
       <h2>Always Tasty Burger</h2>
     </div>
     <h1>Try Our Menu Now</h1>
   </div>
+  <ng-template #Ukrainian>
+    <div class="grid grid-cols-1 gap-4 place-items-center text-center">
+      <div class="shop_block">
+        <h2>Завжди смачно</h2>
+      </div>
+      <h1>Спробуй наше меню</h1>
+    </div>
+  </ng-template>
 </div>
 
 <div class="shop">
-  <div class="filters">
+  <div class="filters" *ngIf="lang == 'eng'; else UkrainianFilter">
     <button (click)="filterItems('burger')">Burgers</button>
     <button (click)="filterItems('snacks')">Snacks</button>
     <button (click)="filterItems('soda')">Soda</button>
@@ -17,6 +28,17 @@
       <i class="pi pi-sort-amount-up-alt"></i>
     </button>
   </div>
+  <ng-template #UkrainianFilter>
+    <div class="filters">
+      <button (click)="filterItems('burger')">Бургери</button>
+      <button (click)="filterItems('snacks')">Снеки</button>
+      <button (click)="filterItems('soda')">Напої</button>
+      <button (click)="filterItems('menu')">Комбо</button>
+      <button (click)="filterItems('')" class="del_filters">
+        <i class="pi pi-sort-amount-up-alt"></i>
+      </button>
+    </div>
+  </ng-template>
   <div class="shop_items">
     <div
       *ngFor="
@@ -28,9 +50,21 @@
       <div class="item_detail">
         <img src="{{ i.img }}" alt="" (click)="getItem(i)" />
         <div class="item_text">
-          <h2>{{ i.name }}</h2>
+          <h2 *ngIf="lang == 'eng'; else UkrainianName">{{ i.name }}</h2>
+          <ng-template #UkrainianName>
+            <h2>{{ i.ukrName }}</h2>
+          </ng-template>
           <h4>${{ i.price }}</h4>
-          <button class="btn_buy" (click)="ToCart(i)">Add</button>
+          <button
+            class="btn_buy"
+            (click)="ToCart(i)"
+            *ngIf="lang == 'eng'; else UkrainianBtn"
+          >
+            Add
+          </button>
+          <ng-template #UkrainianBtn>
+            <button class="btn_buy" (click)="ToCart(i)">Додати</button>
+          </ng-template>
         </div>
       </div>
     </div>

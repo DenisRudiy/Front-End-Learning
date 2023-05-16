@@ -15,10 +15,11 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
     .func_image {
-      width: 28px;
-      height: 28px;
-      padding: 0;
+      width: 30px;
+      height: 30px;
+      padding: 0px 1px 1px 0px;
       margin: 0;
+      border-radius: 50%;
     }
   }
   .func:hover {

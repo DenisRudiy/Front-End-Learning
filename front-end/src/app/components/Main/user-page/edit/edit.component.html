@@ -7,7 +7,7 @@
       </div>
       <input type="file" (change)="onFileSelected($event)" class="input_file" />
     </div>
-    <div class="edit_text">
+    <div class="edit_text" *ngIf="lang == 'eng'; else Ukrainian">
       <h1 class="text-2xl">Your Profile</h1>
       <div class="input_group">
         <span class="p-inputgroup-addon">
@@ -85,5 +85,86 @@
 
       <button class="edit" (click)="updateUser()">Save Changes</button>
     </div>
+
+    <ng-template #Ukrainian
+      ><div class="edit_text">
+        <h1 class="text-2xl">Ваш профіль</h1>
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+          </span>
+          <input
+            [(ngModel)]="loginUser.username"
+            pInputText
+            placeholder="Ім'я"
+            class="reg_input"
+            id="username"
+            maxlength="25"
+            (click)="changeColor('username')"
+          />
+        </div>
+
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-at"></i>
+          </span>
+          <input
+            [(ngModel)]="loginUser.email"
+            pInputText
+            placeholder="Email"
+            class="reg_input"
+            id="email"
+            maxlength="30"
+            (click)="changeColor('email')"
+          />
+        </div>
+
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-lock"></i>
+          </span>
+          <p-password
+            id="firstPassword"
+            [(ngModel)]="firstPassword"
+            placeholder="Пароль"
+            [feedback]="false"
+            maxlength="20"
+            class="ng-dirty"
+            (click)="changeColor('firstPassword')"
+          ></p-password>
+        </div>
+
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-lock"></i>
+          </span>
+          <p-password
+            id="secondPassword"
+            [(ngModel)]="secondPassword"
+            placeholder="Пароль"
+            [feedback]="false"
+            maxlength="20"
+            class="ng-dirty"
+            (click)="changeColor('secondPassword')"
+          ></p-password>
+        </div>
+
+        <div class="input_group">
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-credit-card"></i>
+          </span>
+          <p-inputMask
+            mask="9999-9999-9999-9999"
+            [(ngModel)]="loginUser.card"
+            id="card"
+            placeholder="Номер картки"
+            class="ng-dirty"
+            (click)="changeColor('card')"
+          ></p-inputMask>
+        </div>
+
+        <button class="edit" (click)="updateUser()">Зберегти</button>
+      </div></ng-template
+    >
   </div>
 </div>

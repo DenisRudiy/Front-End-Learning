@@ -8,6 +8,7 @@ import { FoodService } from 'src/app/services/food.service'
   styleUrls: ['./prod-list.component.scss']
 })
 export class ProdListComponent implements OnInit {
+  lang: string = 'eng'
   foodList: Food[] = []
 
   constructor(private service: FoodService) {}
@@ -16,6 +17,11 @@ export class ProdListComponent implements OnInit {
     this.service.getAll().subscribe((data) => {
       this.foodList = data
     })
+
+    const storedLang = localStorage.getItem('language')
+    if (storedLang == 'ukr') {
+      this.lang = storedLang
+    }
 
     const carousel = document.querySelector('.carousel') as HTMLElement | null
 
