@@ -7,26 +7,19 @@
 
 <p align="center">
   
-<img src="https://img.shields.io/npm/dy/silentlad">
 
-<img src="https://img.shields.io/badge/made%20by-silentlad-blue.svg" >
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" >
 
-<img src="https://img.shields.io/badge/vue-2.2.4-green.svg">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 
-<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
+<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" >
 
-<img src="https://beerpay.io/silent-lad/VueSolitaire/badge.svg?style=flat">
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
 
-<img src="https://img.shields.io/github/stars/silent-lad/VueSolitaire.svg?style=flat">
-
-<img src="https://img.shields.io/github/languages/top/silent-lad/VueSolitaire.svg">
-
-<img src="https://img.shields.io/github/issues/silent-lad/VueSolitaire.svg">
-
-<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
+<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
 </p>
 
-<img src="./readme_assets/h2.png" width="100%">
+[![main-title.png](https://i.postimg.cc/6pwDWR2H/main-title.png)](https://postimg.cc/mtXdVPSM)
 
 <h2 align="center"><a  href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
 
