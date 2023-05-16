@@ -19,11 +19,7 @@
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
 </p>
 
-[![main-title.png](https://i.postimg.cc/6pwDWR2H/main-title.png)](https://postimg.cc/mtXdVPSM)
-
-<h2 align="center"><a  href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
-
-### [Contributions are Welcome](https://github.com/silent-lad/VueSolitaire/blob/master/CONTRIBUTING.md)
+<img src="readme_assets/main_title.png">
 
 ## Description
 
