@@ -19,7 +19,7 @@
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
 </p>
 
-<img src="https://i.postimg.cc/6pwDWR2H/main-title.png" width="100%">
+[![main-title.png](https://i.postimg.cc/6pwDWR2H/main-title.png)](https://postimg.cc/mtXdVPSM)
 
 <h2 align="center"><a  href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
 
