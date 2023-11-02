@@ -1,0 +1,45 @@
+.main {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-content {
+      padding: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        margin: 10px;
+        font-size: 22px;
+      }
+      .button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s all;
+      }
+      .button:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}

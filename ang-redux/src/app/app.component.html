@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="card">
+    <div class="card-content">
+      <button class="button" (click)="increase()">Increase</button>
+      <button
+        class="button"
+        (click)="decrease()"
+        [disabled]="disableDecrease | async"
+      >
+        Decrease
+      </button>
+      <button
+        class="button"
+        (click)="clear()"
+        [disabled]="disableDecrease | async"
+      >
+        Clear
+      </button>
+      <span>Counter is: {{ count$ | async }}; </span>
+      <span
+        >Updated at: {{ updatedAt$ | async | date : "yyyy-MM-dd-hh:mm" }}</span
+      >
+    </div>
+  </div>
+</div>
